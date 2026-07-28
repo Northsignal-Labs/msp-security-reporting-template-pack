@@ -1,14 +1,14 @@
 # Northsignal Labs — MSP/Cybersecurity Template Micro-Assets
 
-Northsignal Labs is a small independent automation lab building no-spend, practical cybersecurity/MSP templates and local tools. This repository-style index is designed to be copied into a free static publishing route later without exposing any private individual or personal account.
+Northsignal Labs is a small independent automation lab building no-spend, practical cybersecurity/MSP templates and local tools. The public static pack is live at https://northsignal-labs.github.io/msp-security-reporting-template-pack/ through the approved non-personal GitHub Pages route, without exposing any private individual or personal account.
 
 > Operational-use notice: these assets are templates and automation aids. They are not legal, insurance, brokerage, compliance, audit, certification, Microsoft-affiliation, or professional-services advice.
 
 ## Start here: full pack + request path
 
 - **Use the complete pack first:** start with the highest-intent MSP monthly report asset (`msp-monthly-security-report-template.html`) and then pull the matching Markdown templates, schemas, samples, and local generators listed below.
-- **Request the next useful template after launch:** if this pack is published through an approved non-personal GitHub channel, use `.github/ISSUE_TEMPLATE/template-request.yml` to ask for a new template or generator without sharing client names, private security details, credentials, personal contact details, or confidential information.
-- **Validate future money without payment setup:** if public launch later attracts useful visitors, `.github/ISSUE_TEMPLATE/commercial-fit-signal.yml` can collect non-binding commercial-fit signal about which expanded pack, generator bundle, starter kit, workflow, value band, and monetization trigger might be worth pursuing later, while prohibiting client names, private/security-sensitive details, personal contact details, contract terms, quote/invoice requests, and confidential information.
+- **Request the next useful template:** use the public-safe `.github/ISSUE_TEMPLATE/template-request.yml` path in the GitHub repository to ask for a new template or generator without sharing client names, private security details, credentials, personal contact details, or confidential information.
+- **Validate future money without payment setup:** use the non-binding `.github/ISSUE_TEMPLATE/commercial-fit-signal.yml` path in the GitHub repository to indicate which expanded pack, generator bundle, starter kit, workflow, value band, and monetization trigger might be worth pursuing later, while prohibiting client names, private/security-sensitive details, personal contact details, contract terms, quote/invoice requests, and confidential information.
 - **Keep feedback safe and measurable:** `CONTRIBUTING.md` and `.github/ISSUE_TEMPLATE/config.yml` make future GitHub feedback structured by disabling blank issues and routing public visitors to template-request or commercial-fit signal forms that prohibit sensitive data.
 - **Keep aggregate signal countable:** `.github/labels.yml` predefines the `template-request`, `commercial-fit`, and `demand-signal` labels used by the issue templates and aggregate snapshot helper, and `GITHUB-LABEL-SETUP.md` gives a post-approval label setup handoff so an approved GitHub launch does not lose demand signal because labels were missing.
 - **Keep approved GitHub Pages launch low-friction:** `.github/workflows/static-pages.yml` is a post-approval-only static Pages deploy workflow, and `tools/validate_github_pages_workflow.py` verifies it stays limited to GitHub Pages official actions with no secrets, analytics, payment, contact-capture, or paid-hosting references.
@@ -27,7 +27,7 @@ Northsignal Labs is a small independent automation lab building no-spend, practi
 - **Smoke-test the live URL after reviewer-controlled upload:** `tools/smoke_test_public_url.py` stays blocked until approved public URL fields exist, then checks an expanded allowlist of launch-critical public HTTPS paths — entry files, start/download guides, AI/search summary, checksum sheet, all five landing pages, generated sample previews, robots/sitemap, labels, and request/commercial-fit templates — for 200 responses, placeholder leakage, forms, analytics, and payment/contact-capture risk before the first aggregate-signal snapshot.
 - **Keep AI/search summaries accurate:** `llms.txt` gives future crawlers, AI answer engines, and visitors a concise map of the pack, best entry points, safe request paths, and no-spend/no-data/no-payment guardrails so approved public discovery can route to useful assets without inventing claims or collecting data.
 - **Keep upload integrity checkable:** `CHECKSUMS.txt` lists SHA-256 hashes and byte counts for the manifest-approved public files, and `tools/write_release_checksums.py` regenerates it before final gates so a future approved reviewer can spot stale or incomplete upload trees before traffic validation starts.
-- **No monetization friction yet:** there are no forms, analytics scripts, payment links, account signups, commercial partner links, or contact collection in this local package; first validation is limited to aggregate public stars, forks, watchers, open issues, and labeled `template-request`/`commercial-fit` counts after an approved release.
+- **No monetization friction yet:** there are no analytics scripts, payment links, account signups, commercial partner links, private inboxes, or contact collection in this public package; first validation is limited to aggregate public stars, forks, watchers, open issues, and labeled `template-request`/`commercial-fit` counts.
 - **Clear reuse permission after reviewer approval:** this package now includes `LICENSE` with the approved MIT License under Northsignal Labs attribution, while the operational-use disclaimers below still apply.
 
 ## First publish batch
@@ -42,11 +42,11 @@ Northsignal Labs is a small independent automation lab building no-spend, practi
 
 ## Suggested free publishing sequence
 
-1. Publish the static files only after an approved no-spend channel exists that can use the Northsignal Labs identity without exposing any private individual or personal account.
+1. Keep the approved GitHub Pages release static, no-spend, and non-personal.
 2. Start with the MSP monthly report and NIS2 checklist pages because they are easiest to understand and require no tool execution.
-3. Add the NIS2 readiness summary, M365, cyber-insurance gap-register, and vCISO QBR summary generators as differentiation hooks: "download a template, or generate a local report from JSON."
+3. Use the NIS2 readiness summary, M365, cyber-insurance gap-register, and vCISO QBR summary generators as differentiation hooks: "download a template, or generate a local report from JSON."
 4. Do not add payment, quote, invoice, contact, partner/referral, or sales paths until aggregate public demand signal exists and a separate monetization workflow is explicitly approved.
-5. Track aggregate public signals first: stars, forks, watchers, open issues, `template-request` label counts, and `commercial-fit` label counts. Do not use analytics/page-view scripts, referrer logs, forms, private inboxes, issue bodies, usernames, emails, IPs, or client-sensitive details as validation data.
+5. Track aggregate public signals first: stars, forks, watchers, open issues, `template-request` label counts, and `commercial-fit` label counts. Do not use analytics/page-view scripts, referrer logs, private inboxes, issue bodies, usernames, emails, IPs, or client-sensitive details as validation data.
 
 ## Local usage quick links
 

@@ -36,7 +36,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `f8058c729ff319763d2b7399fc71aae4a9c91be3244e54672597a1f3e3370b75` | 5492 | `PUBLIC-URL-CUTOVER-CHECKLIST.md` |
 | `bbcb89a9ba01af4f54a2c9d6e0b49cd66bda4049012d8b5a3afff22a0d4552c4` | 4922 | `PUBLICATION-CHECKLIST.md` |
 | `01fdb623da676ca0b4ed45761ea4de04233a2b9394109f2041f810824dfa4ac5` | 4486 | `PUBLISHING-ROUTES.md` |
-| `c50bbd177c5836bacdcc7396fe23e41d0daa19743e1647893c84186128004c7f` | 22446 | `README.md` |
+| `fb8cb446238353166239181c106235949bc0bf9e6a837da858a9b3c7d80501c8` | 22308 | `README.md` |
 | `7a97f4a174bf3516fa2e291749864b131f3c45b4aecc6b255081b1dc7b9e7956` | 4932 | `RELEASE-DECISION-NOTE.md` |
 | `d7995337b04cd43a6a0f852397afb4a09642cad7876e5707f0a15c23264a26a2` | 12685 | `RELEASE-RISK-DIGEST.md` |
 | `cb5687c3f679d569be7007d9269edcee313bf68616c9c739a1333c016aa6567d` | 7946 | `RELEASE-SUMMARY.md` |
@@ -66,7 +66,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `05f09cdad7c66427e8184bdfa07449c063ae44b4d8a7f552512fb8dae23c0f11` | 6225 | `generated/vciso-qbr-summary.sample.html` |
 | `536a6ffed37ff1f92160dfc4d043590a43c463eac43c1243af9df0dfd5dd852e` | 5620 | `generated/vciso-qbr-summary.sample.md` |
 | `65f1b90fd6f4a4db90247d3db914ab6b5f4cbcb8744abb44315a20bcb128ca11` | 7505 | `generator-quickstart.html` |
-| `40f1dec80ddd00b0db4203acfb357c5abbceb5e58471dbbbb297d60a23407fa0` | 11261 | `index.html` |
+| `c491f15be62ac83654b08befb15ed0b048c08cfd3cab03524371c2340f600fcc` | 11135 | `index.html` |
 | `6f3f6a67222af5ef8ea958206bec840dd831f73380500189b149b97e5a528c19` | 3645 | `llms.txt` |
 | `c0d46cf72820af16e4981cc8684e338be4f1eafb9db91ed7f07d66d1669466c6` | 11527 | `m365-secure-score-executive-report-template.html` |
 | `17c77435bd27c1778a3679053a8d95154fb78d45da9eacb196af02379c013682` | 993 | `manual-aggregate-counters.example.json` |
