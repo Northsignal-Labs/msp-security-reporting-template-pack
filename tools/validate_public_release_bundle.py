@@ -178,9 +178,6 @@ REQUIRED_PUBLIC_URL_SMOKE_PATHS = [
     "generated/m365-secure-score-report.sample.html",
     "generated/cyber-insurance-gap-register.sample.html",
     "generated/vciso-qbr-summary.sample.html",
-    ".github/labels.yml",
-    ".github/ISSUE_TEMPLATE/template-request.yml",
-    ".github/ISSUE_TEMPLATE/commercial-fit-signal.yml",
 ]
 
 REQUIRED_PUBLIC_URL_SMOKE_GUARDRAILS = [

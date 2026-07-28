@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import quote_plus, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,6 +50,39 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def reuse_previous_live_snapshot_on_transient_failure(snapshot: dict[str, Any], output_path: Path) -> dict[str, Any]:
+    """Preserve the last good aggregate snapshot during transient live API failures.
+
+    The scheduled scout can hit unauthenticated GitHub API rate limits. When that
+    happens, replacing a known-good aggregate baseline with all-zero "failed" data
+    makes the revenue dashboard less honest. This fallback reuses only a previous
+    aggregate-only snapshot from the same approved target; it does not infer new
+    signal or persist issue/user/contact data.
+    """
+    if snapshot.get("collection_state") != "live_collection_failed_no_data_recorded" or not output_path.exists():
+        return snapshot
+    try:
+        previous = load_json(output_path)
+    except (OSError, json.JSONDecodeError):
+        return snapshot
+    if previous.get("collection_state") != "live_aggregate_snapshot_written":
+        return snapshot
+    if previous.get("target") != snapshot.get("target"):
+        return snapshot
+    return {
+        **snapshot,
+        "collection_state": "live_collection_failed_using_previous_aggregate_snapshot",
+        "aggregate_signal": previous.get("aggregate_signal", empty_aggregate_signal()),
+        "asset_label_counts": previous.get("asset_label_counts", empty_asset_label_counts()),
+        "previous_snapshot_generated_at": previous.get("generated_at"),
+        "transient_live_collection_error": snapshot.get("error"),
+        "fallback_guardrail": (
+            "Reused the previous aggregate-only public snapshot because the live GitHub API failed; "
+            "no issue bodies, authors, comments, contact details, analytics, payment data, or inferred signal were collected."
+        ),
+    }
 
 
 def derive_github_repo_from_public_base_url(public_base_url: str) -> tuple[str, str] | None:
@@ -88,6 +121,73 @@ def fetch_json(url: str, timeout: int) -> dict[str, Any]:
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"})
     with urlopen(request, timeout=timeout) as response:  # nosec B310: public aggregate GitHub API only
         return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_text(url: str, timeout: int) -> str:
+    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,text/plain"})
+    with urlopen(request, timeout=timeout) as response:  # nosec B310: public GitHub HTML only
+        return response.read().decode("utf-8", "replace")
+
+
+def parse_public_github_html_count(html: str, patterns: list[str]) -> int:
+    for pattern in patterns:
+        match = re.search(pattern, html, re.IGNORECASE | re.DOTALL)
+        if not match:
+            continue
+        raw = re.sub(r"<[^>]+>", "", match.group(1)).strip().replace(",", "")
+        compact = re.search(r"\d+", raw)
+        if compact:
+            return int(compact.group(0))
+    return 0
+
+
+def fetch_github_html_aggregate(owner: str, repo: str, timeout: int) -> tuple[dict[str, int], dict[str, int]]:
+    """Best-effort aggregate fallback using public GitHub HTML only.
+
+    This is used when unauthenticated API calls are rate-limited. It parses only
+    visible aggregate counters and does not persist issue text, users, comments,
+    contact data, analytics, or private details.
+    """
+    base = f"https://github.com/{owner}/{repo}"
+    repo_html = fetch_text(base, timeout)
+    stars = parse_public_github_html_count(
+        repo_html,
+        [
+            r'id="repo-stars-counter-star"[^>]*>(.*?)</span>',
+            r'aria-label="([\d,]+) users? starred this repository"',
+        ],
+    )
+    forks = parse_public_github_html_count(
+        repo_html,
+        [
+            r'id="repo-network-counter"[^>]*>(.*?)</span>',
+            r'aria-label="([\d,]+) users? forked this repository"',
+        ],
+    )
+    watchers = parse_public_github_html_count(
+        repo_html,
+        [r'<strong>([\d,]+)</strong></span><span>\s*watching</span>'],
+    )
+
+    def issue_count(query: str) -> int:
+        html_doc = fetch_text(f"{base}/issues?q={quote_plus(query)}", timeout)
+        return parse_public_github_html_count(html_doc, [r'<span[^>]*class="Counter"[^>]*>(.*?)</span>'])
+
+    labeled_counts = {
+        "template-request": issue_count("is:issue label:template-request"),
+        "commercial-fit": issue_count("is:issue label:commercial-fit"),
+        **{label: issue_count(f"is:issue label:{label}") for label in ASSET_LABELS.values()},
+    }
+    aggregate = {
+        "stars": stars,
+        "forks": forks,
+        "watchers": watchers,
+        "open_issues": issue_count("is:issue is:open"),
+        "template_requests": labeled_counts["template-request"],
+        "commercial_fit_signals": labeled_counts["commercial-fit"],
+    }
+    asset_counts = {asset_key: labeled_counts[label] for asset_key, label in ASSET_LABELS.items()}
+    return aggregate, asset_counts
 
 
 def fetch_github_repo(owner: str, repo: str, timeout: int) -> dict[str, Any]:
@@ -242,6 +342,7 @@ def build_snapshot(args: argparse.Namespace) -> dict[str, Any]:
         }
 
     owner, repo = target
+    fallback_note = None
     try:
         repo_payload = fetch_github_repo(owner, repo, args.timeout)
         repo_payload["labeled_issue_counts"] = {
@@ -250,12 +351,20 @@ def build_snapshot(args: argparse.Namespace) -> dict[str, Any]:
             **{label: fetch_public_issue_label_count(owner, repo, label, args.timeout) for label in ASSET_LABELS.values()},
         }
         aggregate = aggregate_from_repo_payload(repo_payload)
+        asset_label_counts = asset_label_counts_from_repo_payload(repo_payload)
         state = "live_aggregate_snapshot_written"
         error = None
     except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
-        aggregate = empty_aggregate_signal()
-        state = "live_collection_failed_no_data_recorded"
-        error = f"{type(exc).__name__}: {exc}"
+        try:
+            aggregate, asset_label_counts = fetch_github_html_aggregate(owner, repo, args.timeout)
+            state = "live_aggregate_snapshot_from_public_html_fallback"
+            error = None
+            fallback_note = f"GitHub API failed with {type(exc).__name__}: {exc}; used public GitHub HTML aggregate counters only."
+        except (HTTPError, URLError, TimeoutError, UnicodeDecodeError) as fallback_exc:
+            aggregate = empty_aggregate_signal()
+            asset_label_counts = empty_asset_label_counts()
+            state = "live_collection_failed_no_data_recorded"
+            error = f"{type(exc).__name__}: {exc}; html_fallback={type(fallback_exc).__name__}: {fallback_exc}"
 
     snapshot: dict[str, Any] = {
         "project": "Northsignal Labs MSP Security Reporting Template Pack",
@@ -265,10 +374,13 @@ def build_snapshot(args: argparse.Namespace) -> dict[str, Any]:
         "source": f"https://api.github.com/repos/{owner}/{repo}",
         "target": {"platform": "github", "owner": owner, "repo": repo, "public_base_url": public_base_url},
         "aggregate_signal": aggregate,
-        "asset_label_counts": asset_label_counts_from_repo_payload(repo_payload) if state == "live_aggregate_snapshot_written" else empty_asset_label_counts(),
+        "asset_label_counts": asset_label_counts,
         "guardrail": guardrail,
         "next_decision_hint": decision_hint(aggregate),
     }
+    if fallback_note:
+        snapshot["fallback_note"] = fallback_note
+        snapshot["fallback_guardrail"] = "Public GitHub HTML aggregate counters only; no issue bodies, authors, comments, contact details, analytics, payment data, or inferred signal collected."
     if error:
         snapshot["error"] = error
     return snapshot
@@ -321,6 +433,7 @@ def main() -> int:
 
     snapshot = build_snapshot(args)
     output = Path(args.output)
+    snapshot = reuse_previous_live_snapshot_on_transient_failure(snapshot, output)
     write_json(output, snapshot)
     print(f"wrote {output}")
     print(f"collection_state: {snapshot.get('collection_state')}")

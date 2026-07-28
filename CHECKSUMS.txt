@@ -88,7 +88,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `4addc7bae48c9bd508a080efa649b188c9ad6e20b7153f31cb127de93d0e3217` | 1256 | `sitemap.xml` |
 | `f5eaa9a1b2ddcd91187727cf1c580e54067ccca2a925484d9c3a8d45cd0dc52e` | 25044 | `tools/README.md` |
 | `ba61e7a8578980b4ca00dbb073699fe40206921344ded5c4355f170068f965b5` | 8630 | `tools/apply_public_channel_fields.py` |
-| `4c09ef85f68c04bb3b3ccc6035830db912cf3540ec8fd0b0a5ed640384f692f2` | 15257 | `tools/collect_public_signal_snapshot.py` |
+| `3eccbcfebacc5368c4106fe939352058f790b3c1192a843b20d9a0779ac561c0` | 20631 | `tools/collect_public_signal_snapshot.py` |
 | `334b815cb35159f0acade5270ad0da82e50051ca1d4e35a0b55e145fda38723e` | 10492 | `tools/cyber_insurance_gap_register_generator.py` |
 | `400448caaa1652dd1f6960c4eb7b3dc2e4e43870894914bc9494abed2947159c` | 10318 | `tools/decide_next_revenue_validation_action.py` |
 | `6445103ded794a2ec847652eb605e03f04d8cf0c17f8fbfa79695a7e9ff94e8a` | 9908 | `tools/m365_secure_score_report_generator.py` |
@@ -105,7 +105,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `f96705886390d873222a0447605cb1d752bf44a5d1566e98c0542c0144bd1241` | 3910 | `tools/validate_github_signal_labels.py` |
 | `2b17aa6df74630150228e8ba903dc2fe536036dd966cef2973fd694cd93772c4` | 5839 | `tools/validate_html_conversion_routes.py` |
 | `ae9c3936549e0ac273d3d66a1ad4d6a6e55d23aadb5389a28d93affbe637b741` | 4339 | `tools/validate_public_launch_packet_sync.py` |
-| `1257958f592ee285148d796fd21b67c54a9a90fa0f71a42751fe79b229b337ba` | 28119 | `tools/validate_public_release_bundle.py` |
+| `ee1a89c4bae4faba757406991e020d717cc8fcdb01e19e5c6096607c2213a47f` | 27986 | `tools/validate_public_release_bundle.py` |
 | `ce2ee0c3152a50a1a3e1347c9719ff84c2a5edc75d94f6e06a030bf62ff3842c` | 10563 | `tools/vciso_qbr_summary_generator.py` |
 | `c18b2a0d5696401225b6c90a5076ff3dacef08f74b7ac23bf40d0216c3090093` | 3513 | `tools/write_release_checksums.py` |
 | `4f483cd8fa63ef97fd8e98498428b6a65a7930f1709223d6057bf85d87eeeecd` | 11657 | `vciso-qbr-agenda-template.html` |
