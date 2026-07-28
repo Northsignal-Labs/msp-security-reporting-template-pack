@@ -51,10 +51,10 @@ DEFAULT_PATHS = [
     "generated/vciso-qbr-summary.sample.html",
     "robots.txt",
     "sitemap.xml",
-    ".github/labels.yml",
-    ".github/ISSUE_TEMPLATE/template-request.yml",
-    ".github/ISSUE_TEMPLATE/commercial-fit-signal.yml",
 ]
+# GitHub Pages intentionally does not serve dot-directories such as .github/.
+# Issue templates and labels are verified by repository/workflow validators and
+# raw GitHub checks, not by the Pages static URL smoke test.
 RISK_TOKENS = [
     "northsignal-labs.local",
     "localhost",

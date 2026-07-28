@@ -98,7 +98,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `27ccc09bf5f557264bb7fc2e5b7a6e23e09861ec727af12cb3f06fc2ecc207e2` | 10153 | `tools/review_staged_release.py` |
 | `c61611d9eedca5d856cb0228843252baa3fd94578317c745ff68e4295f423bca` | 6122 | `tools/run_all_sample_generators.py` |
 | `889a2fc75788f037e435d521efd680c3ef6bd69678e6a42b35d61e0f786e1e17` | 7545 | `tools/run_approved_launch_preflight.py` |
-| `b104f84675b7caf2419c2def3d80923d3c8a5cfb97e2586c70d8cbb848bc2136` | 9294 | `tools/smoke_test_public_url.py` |
+| `da1dd180bfe1429ab51763dcd3195307616c93b6edccb8d953c334358c1e8c28` | 9380 | `tools/smoke_test_public_url.py` |
 | `794ad34964a54c7e4cfbe6dd77a43f5a3593f347f9570bf8b1b568ffa985fc9a` | 5689 | `tools/stage_release.py` |
 | `6b4b12adc5495fd8c95f4a9a0962dcf3c0037ab8ee5d7a60f7e3f4c149a80175` | 5220 | `tools/validate_approval_handoff.py` |
 | `1062e509f574c89c000c228b7e8c6050af0e9dafa98f2ff59e4c8441d85c77b6` | 3875 | `tools/validate_github_pages_workflow.py` |
