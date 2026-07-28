@@ -1,0 +1,46 @@
+{
+  "project": "Northsignal Labs MSP Security Reporting Template Pack",
+  "status": "local_only_post_approval_metadata_handoff_not_published",
+  "purpose": "Machine-readable repository metadata for a future approved no-spend, non-personal public channel. This file reduces approval-to-launch copy/paste errors and does not create accounts, upload, publish, collect data, start financial workflows, or spend money.",
+  "repository": {
+    "display_name": "Northsignal Labs MSP Security Reporting Template Pack",
+    "short_description": "Free MSP/client security reporting templates and local generators for monthly reports, NIS2 evidence scoping, M365 Secure Score summaries, cyber-insurance evidence, and vCISO QBRs.",
+    "homepage_url_policy": "Set only to the reviewer-approved HTTPS public_base_url after APPROVAL-HANDOFF-FIELDS.json validates and local URL cutover/final gates pass; do not use northsignal-labs.local, localhost, personal domains, paid domains, forms, analytics, payment, contact-capture, or placeholder URLs.",
+    "visibility_policy": "Public only after concrete no-spend, non-personal channel/account/repository fields are approved and final local gates pass.",
+    "license": "MIT License under Northsignal Labs attribution",
+    "topics": [
+      "msp",
+      "cybersecurity",
+      "security-reporting",
+      "m365",
+      "nis2",
+      "vciso",
+      "qbr",
+      "templates",
+      "static-site",
+      "python"
+    ]
+  },
+  "features_to_enable_after_approved_github_launch": {
+    "issues": "Enable only with .github/ISSUE_TEMPLATE/config.yml present so blank issues remain disabled and feedback routes through template-request/commercial-fit forms.",
+    "labels": "Create or verify template-request, commercial-fit, and demand-signal labels from .github/labels.yml before collecting aggregate signal.",
+    "pages": "Use .github/workflows/static-pages.yml only in the approved non-personal repository if GitHub Pages is the chosen free channel.",
+    "discussions_wiki_projects": "Leave disabled for first validation unless separately approved."
+  },
+  "pinned_launch_copy": "Northsignal Labs MSP Security Reporting Template Pack v0.1 is a static, no-tracking set of MSP/client-facing security reporting templates plus local Python generators. It includes monthly security reporting, NIS2 evidence scoping, M365 Secure Score executive summaries, cyber-insurance evidence preparation, and vCISO QBR planning. Use the files locally, fork/copy under MIT, and request the next useful template through the structured GitHub issue templates without sharing client names, credentials, personal contact details, or confidential information.",
+  "first_validation_metrics": [
+    "aggregate_public_stars",
+    "aggregate_public_forks",
+    "aggregate_public_watchers",
+    "aggregate_public_open_issues",
+    "aggregate_template_request_label_count",
+    "aggregate_commercial_fit_label_count"
+  ],
+  "forbidden_before_separate_approval": [
+    "paid domain, hosting, ads, subscriptions, marketplace fees, or promoted posts",
+    "payout, tax/KYC, paid purchase flow, sponsorship, quote, invoice, sales outreach, commission, partner-tracking, or payment workflow",
+    "forms, cookies, analytics, referrer tracking, newsletter, private inbox, contact capture, issue-body/user harvesting, or sensitive-data collection",
+    "personal identity exposure, private contact details, personal account metadata, fake founder, customer, testimonial, certification, partnership, revenue, or outcome-guarantee claims"
+  ],
+  "guardrail": "Filesystem-only metadata handoff. Do not infer a public URL or account from this file; use only after reviewer-supplied public-channel fields validate."
+}

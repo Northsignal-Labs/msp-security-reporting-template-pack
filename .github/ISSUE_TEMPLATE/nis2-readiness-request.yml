@@ -1,0 +1,53 @@
+name: NIS2 readiness request
+about: Public-safe request signal for the NIS2/evidence readiness workflow
+labels: [template-request, demand-signal, asset:nis2-readiness]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this asset-specific template when your request is about the NIS2/evidence readiness workflow. The asset label lets Northsignal Labs count workflow-level demand in aggregate without reading issue bodies or collecting personal/client data.
+
+        Do not include client names, private security details, screenshots, logs, credentials, personal contact details, contract terms, quote/invoice requests, payment data, regulated details, or confidential information. These assets are operational evidence-collection aids only, not legal, compliance, audit, certification, or professional-services advice.
+  - type: dropdown
+    id: request-intent
+    attributes:
+      label: What improvement would help NIS2/evidence readiness most?
+      description: Choose a generic improvement type only; do not identify a client, tenant, prospect, employer, deal, or contact.
+      options:
+        - More finished readiness/evidence example outputs
+        - Local generator input/import support
+        - Clearer executive summary or one-page output
+        - Additional evidence category or adjacent checklist
+        - Documentation/runbook guidance for MSP operators
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: operational-urgency
+    attributes:
+      label: How soon would this help with a real operational workflow?
+      options:
+        - This week
+        - This month
+        - This quarter
+        - Later / exploratory
+        - No current operational need
+    validations:
+      required: true
+  - type: textarea
+    id: requested-improvement
+    attributes:
+      label: What would make the NIS2/evidence readiness workflow more useful?
+      description: Keep this generic and public-safe. Do not share client-specific, private, regulated, or confidential details.
+      placeholder: "Example: add a backup/restore evidence table, add a supplier-risk evidence prompt, or add a one-page readiness summary."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety-confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included client names, private security details, credentials, logs, screenshots, personal contact details, contract terms, payment data, regulated details, or confidential information.
+          required: true
+        - label: I understand this is public operational evidence-template feedback only, not a quote, invoice, purchase, sales contact, legal/compliance/audit advice, or professional-service request.
+          required: true

@@ -1,0 +1,18 @@
+{
+  "purpose": "Optional aggregate-only asset-level scoring fixture for post-launch revenue-validation decisions. Copy to asset-signal-scores.json after an approved public launch only, then enter 0..3 scores from public aggregate template-request/commercial-fit label counts and allowed manual observations. Do not include issue bodies, authors, comments, usernames, emails, IPs, client names, contact details, quotes, invoices, payment data, logs, screenshots, or confidential/security-sensitive information.",
+  "scoring_scale": {
+    "0": "No visible public-safe demand for this asset yet",
+    "1": "Weak signal, such as a star/fork/open issue without asset-specific request evidence",
+    "2": "Some signal, such as one public-safe template request or repeated aggregate interest for this asset category",
+    "3": "Meaningful signal, such as commercial-fit label evidence or multiple public-safe requests pointing to this asset category"
+  },
+  "asset_scores": {
+    "msp_monthly_security_report": 0,
+    "nis2_readiness_checklist": 0,
+    "m365_secure_score_report": 0,
+    "cyber_insurance_evidence": 0,
+    "vciso_qbr_agenda": 0
+  },
+  "allowed_source": "Aggregate public counters and label/category totals only after APPROVAL-HANDOFF-FIELDS.json validates a concrete approved public URL and the package is live.",
+  "forbidden_source": "No analytics, referrer logs, issue bodies, comments, author names, usernames, emails, IPs, contact details, client names, confidential/security-sensitive details, quotes, invoices, payment/KYC data, private inboxes, forms, account creation, posting, or spend."
+}

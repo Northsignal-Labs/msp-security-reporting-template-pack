@@ -1,0 +1,17 @@
+{
+  "purpose": "Example reviewer-supplied aggregate counters for an approved non-GitHub/equivalent free static channel after the public URL exists. Copy to manual-aggregate-counters.json only after launch and replace counts with public aggregate integers.",
+  "guardrails": [
+    "Use only after APPROVAL-HANDOFF-FIELDS.json has approved_for_cutover=true and a real HTTPS public_base_url.",
+    "Record non-negative integer aggregate counters only.",
+    "Do not include usernames, emails, issue bodies, comments, referrers, IP addresses, analytics exports, contact details, client names, quote requests, invoice data, payment data, or confidential information.",
+    "Do not treat these counters as sales leads or payment authorization; run tools/decide_next_revenue_validation_action.py before any monetization-path work."
+  ],
+  "aggregate_signal": {
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0,
+    "open_issues": 0,
+    "template_requests": 0,
+    "commercial_fit_signals": 0
+  }
+}

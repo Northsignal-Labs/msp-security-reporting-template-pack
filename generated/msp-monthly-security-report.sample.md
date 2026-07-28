@@ -1,0 +1,94 @@
+# MSP Monthly Security Report — Example Client Ltd
+
+Northsignal Labs — local operational reporting output.
+
+> This report is an operational reporting aid. It is not legal, audit, insurance, compliance, certification, or professional-services advice. Replace sample values with verified client-specific evidence before external use.
+
+## Executive summary
+
+- Client: Example Client Ltd
+- Reporting period: 2026-07-01 to 2026-07-31
+- Prepared by: Example MSP security operations team
+- Generated date: 2026-07-28
+- Overall security posture: Amber
+- Highest-priority action: Close the remaining privileged MFA exceptions and confirm the next backup restore test date.
+
+Overall posture is **Amber**. Area status count: Red=0, Amber=3, Green=3. Recorded incidents/alerts: 1. Open or deferred risks: 2.
+
+## Security areas
+
+| Area | Status | Notes | Evidence source |
+| --- | --- | --- | --- |
+| Identity and MFA | Amber | 97% MFA coverage; two break-glass or legacy exceptions remain documented. | Microsoft Entra export |
+| Network/VPN/firewall | Amber | VPN users reviewed; three dormant accounts need manager confirmation before removal. | Firewall/VPN user export |
+| Patch/update hygiene | Amber | Eight devices have critical updates older than 14 days due to missed maintenance windows. | RMM patch report |
+| Backups | Green | 99.2% job success this period; last restore test completed 2026-07-10. | Backup console report |
+| Email/security awareness | Green | Routine phishing and malware events were blocked; no confirmed compromise. | Email security dashboard |
+| Endpoint protection | Green | All active devices have EDR agent coverage; one stale device is queued for removal. | EDR device inventory |
+
+## Key changes this month
+
+| Change | Impact | Evidence |
+| --- | --- | --- |
+| Enabled MFA for 14 additional users | Reduced identity exposure and improved coverage trend. | Entra MFA registration export |
+| Removed six inactive standard accounts | Reduced attack surface and stale access. | Ticket SEC-1024 |
+| Completed backup restore test | Confirmed recoverability for one business-critical file share. | Restore-test screenshot and ticket BAK-771 |
+
+## Metrics snapshot
+
+| Metric | Current | Target | Trend | Source |
+| --- | --- | --- | --- | --- |
+| MFA coverage | 97% | 100% | up | Microsoft Entra / M365 |
+| Admin accounts reviewed | 100% | 100% monthly | flat | Entra / AD |
+| Devices missing EDR | 0 | 0 | flat | EDR console |
+| Critical patches overdue >14 days | 8 | 0 | down | RMM / Intune |
+| Backup jobs successful | 99.2% | >=98% | flat | Backup platform |
+| Restore tests completed | 1 | >=1 quarterly | new | Backup evidence |
+| High-risk sign-ins | 0 | 0 unresolved | flat | Entra ID Protection |
+| Phishing/malware blocked | 43 | informational | not_tracked | Email security |
+
+## Incidents and notable alerts
+
+| Date | Summary | Severity | Action taken | Current status |
+| --- | --- | --- | --- | --- |
+| 2026-07-18 | Suspicious mailbox rule attempt blocked by policy. | Medium | Reviewed account activity, reset session tokens, confirmed MFA registration. | closed |
+
+## Risk register update
+
+| Risk | Business impact | Likelihood | Owner | Due date | Status |
+| --- | --- | --- | --- | --- | --- |
+| Privileged MFA exceptions remain open | Increases impact of credential theft for administrative accounts. | High | MSP service desk lead | 2026-08-07 | open |
+| Dormant VPN accounts pending manager confirmation | Could preserve unnecessary remote access. | Medium | Client operations owner | 2026-08-14 | in_progress |
+
+## Evidence checklist
+
+| Evidence item | Status | Location/notes |
+| --- | --- | --- |
+| MFA coverage export or screenshot | attached | Evidence folder / identity / 2026-07 |
+| Privileged users reviewed | attached | Ticket SEC-1040 |
+| Endpoint/EDR device coverage export | attached | Evidence folder / endpoint / 2026-07 |
+| Patch compliance report | attached | RMM report export |
+| Backup success report | attached | Backup monthly summary |
+| Latest restore-test evidence | attached | Ticket BAK-771 |
+| High-risk sign-in review | attached | Entra risk review export |
+| Firewall/VPN user review | partial | Manager confirmations pending for three users |
+
+## Recommended next actions
+
+| Priority | Action | Reason | Owner | Due date |
+| --- | --- | --- | --- | --- |
+| 1 | Remove or harden privileged MFA exceptions | Reduces identity attack path for high-impact accounts. | MSP service desk lead | 2026-08-07 |
+| 2 | Complete patch remediation on eight overdue devices | Reduces exposure to known critical vulnerabilities. | Endpoint operations | 2026-08-10 |
+| 3 | Confirm dormant VPN account removals | Reduces unnecessary remote access. | Client operations owner | 2026-08-14 |
+
+## Client decision log
+
+| Decision needed | Options | Recommendation | Decision/date |
+| --- | --- | --- | --- |
+| Require phishing-resistant MFA for all administrator accounts | Option A: enforce next cycle; Option B: phase in over two cycles | Approve phased enforcement with explicit exception owner and review date. | pending |
+
+## Suggested MSP follow-up
+
+1. Attach source evidence before sending externally.
+2. Keep the executive summary to one highest-priority action and a short posture explanation.
+3. Carry unresolved risks and decisions into the next monthly report or QBR agenda.

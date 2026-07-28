@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/schemas/cyber-insurance-gap-register.schema.json",
+  "title": "Northsignal Labs Cyber Insurance Evidence Gap Register Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["entity", "controls"],
+  "properties": {
+    "entity": {"type": "string", "minLength": 1},
+    "review_trigger": {"type": "string"},
+    "scope": {"type": "string"},
+    "prepared_by": {"type": "string"},
+    "controls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["control", "current_answer", "evidence_status"],
+        "properties": {
+          "control": {"type": "string", "minLength": 1},
+          "question": {"type": "string"},
+          "current_answer": {
+            "type": "string",
+            "enum": ["yes", "partial", "no", "unknown", "not_applicable"]
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": ["attached", "partial", "missing", "needs_validation", "not_applicable"]
+          },
+          "owner": {"type": "string"},
+          "next_action": {"type": "string"},
+          "due_date": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

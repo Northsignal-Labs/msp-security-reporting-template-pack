@@ -1,0 +1,99 @@
+name: Commercial fit signal
+about: Public-safe non-binding signal for what would make the template pack worth paying for later
+labels: [commercial-fit, demand-signal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this only for public-safe, non-confidential market signal. Do not include client names, private security details, screenshots, logs, credentials, personal contact details, pricing contracts, regulated information, or confidential information.
+
+        This is not a purchase, sales conversation, quote request, invoice, commitment, or request for legal, insurance, compliance, audit, certification, Microsoft-affiliation, or professional-services advice. Northsignal Labs is a small independent automation lab validating whether these operational templates and local tools are useful enough to justify future no-spend monetization work.
+  - type: dropdown
+    id: strongest-paid-path
+    attributes:
+      label: If this became useful enough to pay for later, which path would fit best?
+      options:
+        - Expanded downloadable template pack
+        - Local generator bundle with more examples
+        - MSP monthly reporting starter kit
+        - Evidence/QBR workflow pack
+        - Productized implementation/pilot help
+        - None — only useful as a free resource
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How soon would this solve a real operational problem?
+      options:
+        - This week
+        - This month
+        - This quarter
+        - Later / exploratory
+        - No current operational need
+    validations:
+      required: true
+  - type: dropdown
+    id: value-band
+    attributes:
+      label: Non-binding value band if the missing piece existed
+      description: Choose a broad range only; do not share contract rates, budgets, client details, or identifying information.
+      options:
+        - Not worth paying for
+        - Under 50 USD equivalent one-time
+        - 50–200 USD equivalent one-time
+        - 200–1000 USD equivalent one-time
+        - Monthly/recurring value could make sense
+        - Cannot say publicly
+    validations:
+      required: true
+  - type: dropdown
+    id: buyer-workflow
+    attributes:
+      label: Which public-safe workflow would this support?
+      description: Pick the generic workflow only. Do not name a client, tenant, prospect, deal, employer, or contact.
+      options:
+        - MSP monthly reporting to clients
+        - M365 Secure Score executive reporting
+        - NIS2/evidence readiness scoping
+        - Cyber-insurance evidence preparation
+        - vCISO/QBR planning and action tracking
+        - Internal MSP process documentation
+        - Other public-safe operational workflow
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: monetization-trigger
+    attributes:
+      label: What would make this credible enough to evaluate as a paid or pilot path later?
+      description: Non-binding signal only; do not request a quote, invoice, contact, demo call, purchase link, or private follow-up.
+      options:
+        - More finished example outputs
+        - Import/export support for common files
+        - More templates in the same workflow
+        - A repeatable local generator bundle
+        - Deployment/runbook guidance for MSP operators
+        - Evidence/QBR/reporting workflow packaged together
+        - Nothing — should stay free only
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: missing-piece
+    attributes:
+      label: What missing piece would create that value?
+      description: Keep this generic and operational. Do not share confidential, client-specific, regulated, personal, or security-sensitive details.
+      placeholder: "Example: add a CSV importer, add a one-page executive summary, add backup/restore evidence prompts, or add a repeatable QBR action-register generator."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety-confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included client names, private security details, credentials, logs, screenshots, personal contact details, contract terms, regulated information, or confidential information.
+          required: true
+        - label: I understand this is non-binding market signal only, not a purchase, quote, invoice, sales contact, or request for regulated/professional advice.
+          required: true

@@ -1,0 +1,42 @@
+{
+  "entity": "Example MSP Client",
+  "review_trigger": "Cyber-insurance renewal evidence review",
+  "scope": "Microsoft 365, endpoints, backups, remote access, and incident response evidence",
+  "prepared_by": "Northsignal Labs local generator sample",
+  "controls": [
+    {
+      "control": "MFA for remote access",
+      "question": "Is MFA enforced for all remote access and privileged accounts?",
+      "current_answer": "yes",
+      "evidence_status": "needs_validation",
+      "owner": "MSP security lead",
+      "due_date": "2026-08-05",
+      "notes": "M365 policy exists; VPN and third-party admin portals need validation."
+    },
+    {
+      "control": "Endpoint protection coverage",
+      "question": "Are endpoints protected by monitored EDR/AV?",
+      "current_answer": "partial",
+      "evidence_status": "partial",
+      "owner": "Endpoint admin",
+      "due_date": "2026-08-07",
+      "notes": "Server coverage report is missing."
+    },
+    {
+      "control": "Restore testing",
+      "question": "Has a recent restore test been completed and documented?",
+      "current_answer": "unknown",
+      "evidence_status": "missing",
+      "owner": "Backup owner",
+      "due_date": "2026-08-09"
+    },
+    {
+      "control": "Incident response contacts",
+      "question": "Are incident escalation and claim notice contacts documented?",
+      "current_answer": "yes",
+      "evidence_status": "attached",
+      "owner": "Operations manager",
+      "due_date": "2026-08-01"
+    }
+  ]
+}

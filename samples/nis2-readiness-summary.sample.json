@@ -1,0 +1,129 @@
+{
+  "client_name": "Example Manufacturing Services Ltd",
+  "review_date": "2026-07-24",
+  "prepared_by": "Example MSP security operations team",
+  "scope": "Initial operational evidence review for core IT services, identity, backup, incident, supplier, and management-review records.",
+  "overall_readiness": "Partial",
+  "top_gap": "Restore-test evidence and supplier responsibility mapping are not yet complete.",
+  "sector_notes": "Potential supply-chain relevance should be confirmed by qualified legal/compliance advisors; this sample does not determine NIS2 applicability.",
+  "country_notes": "Client operations and customers span multiple EU/EEA markets; local transposition and contractual obligations need advisor review.",
+  "evidence_areas": [
+    {
+      "area": "Governance and risk management",
+      "status": "partial",
+      "evidence": "Cyber risk register and security policy exist; management review minutes are inconsistent.",
+      "owner": "Operations director",
+      "notes": "Add a recurring leadership review cadence."
+    },
+    {
+      "area": "Asset, service, and dependency mapping",
+      "status": "partial",
+      "evidence": "Endpoint and SaaS inventory exported; critical service dependency map is still draft.",
+      "owner": "IT manager",
+      "notes": "Map backup, identity, and supplier dependencies per critical service."
+    },
+    {
+      "area": "Identity and access controls",
+      "status": "ready",
+      "evidence": "MFA coverage report and privileged account review completed this quarter.",
+      "owner": "MSP service desk lead",
+      "notes": "Keep break-glass account review evidence with monthly report pack."
+    },
+    {
+      "area": "Vulnerability, patching, and configuration",
+      "status": "partial",
+      "evidence": "Patch compliance report available; exception register is incomplete.",
+      "owner": "Endpoint engineering",
+      "notes": "Add owners and target dates for delayed high-risk patches."
+    },
+    {
+      "area": "Backup, continuity, and recovery",
+      "status": "missing",
+      "evidence": "Backup success report exists, but latest restore-test evidence is missing.",
+      "owner": "Infrastructure lead",
+      "notes": "Run and document a restore test before next review."
+    },
+    {
+      "area": "Incident handling and reporting readiness",
+      "status": "partial",
+      "evidence": "Incident response plan exists; external notification decision path needs advisor review.",
+      "owner": "Security lead",
+      "notes": "Do not treat this sample as legal reporting guidance."
+    },
+    {
+      "area": "Supplier and MSP operating model",
+      "status": "missing",
+      "evidence": "Supplier list exists; MSP/client responsibility split is not documented per service.",
+      "owner": "Account manager",
+      "notes": "Create a responsibility matrix before renewal/QBR."
+    },
+    {
+      "area": "Awareness and training",
+      "status": "ready",
+      "evidence": "Annual awareness completion summary and admin incident-training notes are stored in the evidence folder.",
+      "owner": "HR operations",
+      "notes": "Keep generic completion summary only; no personal training data in public examples."
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "No documented restore test in current evidence folder",
+      "evidence_missing": "Restore test report, result summary, lessons learned",
+      "impact": "High",
+      "owner": "Infrastructure lead",
+      "target_date": "2026-08-15",
+      "next_action": "Run a scoped restore test and attach a short evidence summary."
+    },
+    {
+      "gap": "Supplier/MSP responsibility split is not mapped to critical services",
+      "evidence_missing": "Responsibility matrix, service dependency owner list",
+      "impact": "Medium",
+      "owner": "Account manager",
+      "target_date": "2026-08-22",
+      "next_action": "Draft a RACI-style matrix for MSP, client, and critical SaaS suppliers."
+    },
+    {
+      "gap": "External notification decision path needs qualified review",
+      "evidence_missing": "Advisor-reviewed incident reporting decision tree",
+      "impact": "Medium",
+      "owner": "Security lead",
+      "target_date": "2026-09-01",
+      "next_action": "Prepare operational facts/questions for legal/compliance advisor review."
+    }
+  ],
+  "questions_for_advisor": [
+    {
+      "question": "Which entity, country, sector, and contract facts matter most for NIS2 applicability?",
+      "context": "Client has cross-border customers and supplier obligations.",
+      "owner": "Operations director"
+    },
+    {
+      "question": "What incident reporting decision points should the operational playbook escalate for qualified review?",
+      "context": "MSP needs a safe escalation path without making legal conclusions.",
+      "owner": "Security lead"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "priority": 1,
+      "action": "Complete restore-test evidence and record lessons learned.",
+      "reason": "Backup/recovery proof is currently the highest-risk missing operational evidence.",
+      "owner": "Infrastructure lead",
+      "target_date": "2026-08-15"
+    },
+    {
+      "priority": 2,
+      "action": "Create a critical-service responsibility matrix for client, MSP, and supplier roles.",
+      "reason": "Clarifies operating ownership before incident or continuity discussions.",
+      "owner": "Account manager",
+      "target_date": "2026-08-22"
+    },
+    {
+      "priority": 3,
+      "action": "Prepare advisor questions for NIS2 applicability and notification decision paths.",
+      "reason": "Keeps the MSP evidence workflow operational and avoids legal overclaiming.",
+      "owner": "Security lead",
+      "target_date": "2026-09-01"
+    }
+  ]
+}

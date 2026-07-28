@@ -1,0 +1,49 @@
+# Northsignal Labs MSP Security Reporting Template Pack
+
+> Northsignal Labs is a small independent automation lab publishing no-spend, operational MSP/cybersecurity templates and local-only generators. These materials are templates and automation aids, not legal, insurance, brokerage, compliance, audit, certification, Microsoft-affiliation, or professional-services advice.
+
+## Best entry points
+
+- `README.md` — repository overview, safe-use boundaries, and complete pack index.
+- `DOWNLOAD.md` — fastest visitor route to the right template, schema, sample, or generator.
+- `SAMPLE-OUTPUTS.md` — generated proof-of-value previews for the MSP monthly report, NIS2 readiness summary, M365 Secure Score executive report, cyber-insurance gap register, and vCISO QBR summary.
+- `msp-monthly-security-report-template.html` — highest-intent anchor asset for MSP monthly reporting.
+- `FIRST-7-DAY-VALIDATION-PLAN.md` — post-approval aggregate validation plan for the first public week.
+
+## Included workflows
+
+- MSP monthly security report template with Markdown asset, JSON schema, sample input, and local Markdown/HTML generator.
+- NIS2 readiness checklist and evidence-summary generator for MSP client evidence scoping, framed as operational support only.
+- M365 Secure Score executive report template with JSON schema, sample input, and local Markdown/HTML generator.
+- Cyber-insurance evidence checklist and gap-register generator, framed as evidence preparation only.
+- vCISO QBR agenda template and summary generator with executive scorecard prompts, decision log, and action register.
+
+## Safe request paths after an approved GitHub launch
+
+- `.github/ISSUE_TEMPLATE/template-request.yml` — public-safe requests for additional templates or generators.
+- `.github/ISSUE_TEMPLATE/commercial-fit-signal.yml` — non-binding commercial-fit signal for future monetization learning.
+- `.github/ISSUE_TEMPLATE/config.yml` — blank issues disabled so feedback stays structured.
+
+Do not include client names, private security details, credentials, vulnerability details, logs, screenshots, personal contact details, regulated/confidential information, quote requests, invoices, payment details, or contract terms in public issues.
+
+## Local tools
+
+- `tools/msp_monthly_security_report_generator.py`
+- `tools/nis2_readiness_summary_generator.py`
+- `tools/m365_secure_score_report_generator.py`
+- `tools/cyber_insurance_gap_register_generator.py`
+- `tools/vciso_qbr_summary_generator.py`
+- `tools/collect_public_signal_snapshot.py` — aggregate public counters only after approved launch.
+- `tools/decide_next_revenue_validation_action.py` — converts aggregate signal into the next no-spend validation action.
+
+## Guardrails
+
+- Static files and Python standard-library local tools only.
+- No analytics scripts, cookies, forms, newsletter signup, lead capture, private inbox, scraping, or sensitive-data workflow.
+- No payment links, checkout, payout, tax/KYC, paid listing, sponsorship, affiliate/referral, quote, invoice, sales outreach, or other financial workflow.
+- No paid hosting, paid domains, ads, paid tools, subscriptions, marketplace placement, or spend.
+- No private individual identity, personal account metadata, private contact details, invented founder/customer/testimonial/certification/partnership/revenue claims, or unsupported outcome claims.
+
+## Current publication state
+
+The package is local-only until a concrete approved non-personal no-spend HTTPS public URL/account target is supplied and release gates pass after URL cutover. `robots.txt` and `sitemap.xml` intentionally keep the placeholder host until then.

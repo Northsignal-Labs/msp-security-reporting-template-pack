@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIS2 Readiness Checklist for MSP Clients | Northsignal Labs</title>
+  <meta name="description" content="A free operational NIS2 readiness evidence checklist for MSPs and small IT teams. Organize governance, incident, backup, supplier, identity, and patching evidence without legal overclaiming." />
+  <meta property="og:title" content="NIS2 Readiness Checklist for MSP Clients" />
+  <meta property="og:description" content="Operational evidence checklist for MSPs preparing NIS2 readiness conversations: governance, identity, patching, backups, incidents, suppliers, and awareness without legal overclaiming." />
+  <meta name="twitter:card" content="summary" />
+  <style>
+    :root{--bg:#080b12;--panel:#101725;--line:rgba(255,255,255,.12);--text:#edf3ff;--muted:#9aa8be;--accent:#7cc7ff;--warn:#ffd166;--good:#39d98a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 0 0,rgba(124,199,255,.16),transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:var(--accent)}header,main,footer{padding:28px clamp(18px,4vw,54px)}header{border-bottom:1px solid var(--line)}.brand{color:var(--muted);font-size:14px;letter-spacing:.08em;text-transform:uppercase}.hero{max-width:980px}.hero h1{font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-.06em;margin:10px 0 14px}.lede{font-size:clamp(18px,2vw,23px);color:#c7d4e8;max-width:860px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;border-radius:999px;padding:12px 16px;text-decoration:none;font-weight:700;border:1px solid var(--line)}.button.primary{background:var(--accent);color:#06111f;border-color:transparent}.button.secondary{color:var(--text);background:rgba(255,255,255,.04)}.grid{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:16px;margin:22px 0}.card,section{background:rgba(16,23,37,.92);border:1px solid var(--line);border-radius:20px;padding:20px}.card h3,section h2{margin-top:0}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted);font-size:12px}.notice{border-left:4px solid var(--warn);background:rgba(255,209,102,.08)}.template{background:#07101d;border-radius:16px;border:1px solid var(--line);padding:18px;overflow:auto}.template table{border-collapse:collapse;width:100%;min-width:760px;margin:12px 0}.template th,.template td{border:1px solid rgba(255,255,255,.16);padding:8px;text-align:left;vertical-align:top}.template th{background:#121d2e}.cols{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:14px}.checklist li{margin:6px 0}code{background:rgba(255,255,255,.08);padding:1px 4px;border-radius:5px}footer{color:var(--muted)}@media(max-width:900px){.grid,.cols{grid-template-columns:1fr}.template table{font-size:13px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Northsignal Labs</div>
+    <div class="hero">
+      <h1>NIS2 Readiness Checklist for MSP Clients</h1>
+      <p class="lede">A practical evidence-first checklist for MSPs and small IT teams preparing client readiness conversations around governance, incidents, suppliers, backups, identity, patching, and recovery.</p>
+      <div class="cta">
+        <a class="button primary" href="assets/nis2-readiness-checklist.md">Download Markdown checklist</a>
+        <a class="button secondary" href="samples/nis2-readiness-summary.sample.json">Inspect sample JSON</a>
+        <a class="button secondary" href="generated/nis2-readiness-summary.sample.html">Preview generated summary</a>
+        <a class="button secondary" href="tools/nis2_readiness_summary_generator.py">Review local generator</a>
+        <a class="button secondary" href="#copy-checklist">Copy the checklist below</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid" aria-label="Checklist summary">
+      <div class="card"><span class="pill">Built for</span><h3>MSP readiness discovery</h3><p class="muted">Use as a structured conversation starter and evidence tracker before formal compliance review.</p></div>
+      <div class="card"><span class="pill">Covers</span><h3>8 evidence areas + generator</h3><p class="muted">Governance, assets, identity, patching, backups, incidents, suppliers, and awareness, with an optional local JSON-to-summary generator.</p></div>
+      <div class="card"><span class="pill">Risk control</span><h3>Evidence-only framing</h3><p class="muted">The asset avoids legal conclusions, applicability decisions, certifications, and customer claims.</p></div>
+    </div>
+
+    <section>
+      <span class="pill">Start here if you need the full pack</span>
+      <h2>Turn this NIS2 checklist into a client-ready reporting bundle</h2>
+      <p>Use the checklist to scope NIS2 evidence, then move into the full Northsignal Labs MSP Security Reporting Template Pack for board-friendly monthly reporting, M365 Secure Score summaries, cyber-insurance evidence tracking, vCISO QBR follow-up, sample-output previews, and approved-launch request/commercial-fit signal routing.</p>
+      <div class="cta">
+        <a class="button primary" href="README.md">Open the complete template pack</a>
+        <a class="button secondary" href="download.html">Open start/download guide</a>
+        <a class="button secondary" href="sample-outputs.html">Preview sample outputs</a>
+        <a class="button secondary" href="msp-monthly-security-report-template.html">Start with the MSP monthly report</a>
+        <a class="button secondary" href="request-signal.html">Choose request signal path</a>
+        <a class="button secondary" href=".github/ISSUE_TEMPLATE/template-request.yml">Preview future template request path</a>
+        <a class="button secondary" href=".github/ISSUE_TEMPLATE/commercial-fit-signal.yml">Preview commercial-fit path</a>
+      </div>
+      <p class="muted">No form, tracking script, payment link, contact collection, or public release is active here; the request link is a public-safe GitHub issue-template path for a future approved non-personal channel.</p>
+    </section>
+
+    <section class="notice">
+      <h2>Use disclaimer</h2>
+      <p>This is an operational checklist, not legal, audit, regulatory, or compliance advice. NIS2 obligations vary by country, entity type, sector, size, contracts, and local transposition. Use this only to organize evidence and questions for qualified legal/compliance review.</p>
+    </section>
+
+    <section>
+      <h2>15-minute scoping questions</h2>
+      <div class="template">
+        <table><thead><tr><th>Question</th><th>Evidence to collect</th><th>Owner</th><th>Status</th></tr></thead><tbody><tr><td>Does the organization operate in a potentially covered sector or supply chain?</td><td>Sector list, customer contracts, procurement requirements</td><td>[name/team]</td><td>[unknown/in review/confirmed]</td></tr><tr><td>Which EU/EEA countries are relevant?</td><td>Registered entities, service locations, customer locations</td><td>[name/team]</td><td>[unknown/in review/confirmed]</td></tr><tr><td>Is management formally accountable for cyber risk oversight?</td><td>Board/leadership meeting minutes, risk register, policies</td><td>[name/team]</td><td>[missing/partial/ready]</td></tr><tr><td>Are critical services and dependencies documented?</td><td>Asset inventory, service map, vendor list</td><td>[name/team]</td><td>[missing/partial/ready]</td></tr><tr><td>Is incident reporting ownership clear?</td><td>Incident response plan, escalation contacts, regulator/contact notes</td><td>[name/team]</td><td>[missing/partial/ready]</td></tr></tbody></table>
+      </div>
+    </section>
+
+    <section id="copy-checklist">
+      <h2>Copy/paste evidence checklist</h2>
+      <div class="cols">
+        <div class="card"><h3>1. Governance and risk management</h3><ul class="checklist"><li>[ ] Named executive owner for cybersecurity risk</li><li>[ ] Current information security policy or operating standard</li><li>[ ] Cyber risk register with owners and review dates</li><li>[ ] Management review cadence for security risks and incidents</li><li>[ ] Supplier/customer contractual security obligations collected</li></ul></div>
+        <div class="card"><h3>2. Assets, services, dependencies</h3><ul class="checklist"><li>[ ] Inventory of critical business services</li><li>[ ] Systems supporting each critical service</li><li>[ ] Privileged identity/account inventory</li><li>[ ] Third-party supplier and SaaS dependency list</li><li>[ ] Backup and recovery dependency map</li></ul></div>
+        <div class="card"><h3>3. Identity and access controls</h3><ul class="checklist"><li>[ ] MFA coverage report</li><li>[ ] Privileged account review completed within the last quarter</li><li>[ ] Joiner/mover/leaver evidence</li><li>[ ] Break-glass controls and review dates</li><li>[ ] Conditional access or equivalent policy evidence</li></ul></div>
+        <div class="card"><h3>4. Vulnerability and patching</h3><ul class="checklist"><li>[ ] Patch compliance report</li><li>[ ] Vulnerability scan or exposure review evidence</li><li>[ ] Secure configuration baseline</li><li>[ ] Exception register for unsupported systems or delayed patches</li><li>[ ] Remediation owner and target date for high-risk findings</li></ul></div>
+        <div class="card"><h3>5. Backup and recovery</h3><ul class="checklist"><li>[ ] Backup policy with retention and scope</li><li>[ ] Latest backup success/failure report</li><li>[ ] Latest restore test evidence</li><li>[ ] RTO/RPO expectations documented</li><li>[ ] Continuity contacts and escalation path</li></ul></div>
+        <div class="card"><h3>6. Incident readiness</h3><ul class="checklist"><li>[ ] Incident response plan or playbook</li><li>[ ] Severity definitions and triage process</li><li>[ ] Internal escalation contacts</li><li>[ ] External notification decision path</li><li>[ ] Incident log template and evidence retention location</li></ul></div>
+        <div class="card"><h3>7. Supplier and MSP model</h3><ul class="checklist"><li>[ ] MSP vs client responsibility split</li><li>[ ] Supplier security review checklist</li><li>[ ] Critical supplier contact list</li><li>[ ] Contract/security addendum evidence, if applicable</li><li>[ ] Supplier incident and outage tracking process</li></ul></div>
+        <div class="card"><h3>8. Awareness and training</h3><ul class="checklist"><li>[ ] Security awareness or phishing training evidence</li><li>[ ] Admin/operator incident training notes</li><li>[ ] Management briefing on cyber risk responsibilities</li><li>[ ] Record of policy acceptance or staff communication</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gap register</h2>
+      <div class="template"><table><thead><tr><th>Gap</th><th>Evidence missing</th><th>Risk/impact</th><th>Owner</th><th>Target date</th><th>Next action</th></tr></thead><tbody><tr><td>[e.g. restore test not documented]</td><td>[screenshot/report/minutes]</td><td>[business impact]</td><td>[name/team]</td><td>[date]</td><td>[specific next step]</td></tr></tbody></table></div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Template pack navigation">
+      <p><a href="index.html">Northsignal Labs index</a> · <a href="README.md">Template pack README</a> · <a href="msp-monthly-security-report-template.html">MSP monthly report</a> · <a href="m365-secure-score-executive-report-template.html">M365 report</a> · <a href="cyber-insurance-evidence-checklist.html">Cyber insurance checklist</a> · <a href="vciso-qbr-agenda-template.html">vCISO QBR agenda</a></p>
+    </nav>
+    <p>Northsignal Labs is a small independent automation lab. This page is a locally prepared no-spend asset; it makes no customer, certification, partnership, legal, compliance, or revenue claims.</p>
+  </footer>
+</body>
+</html>

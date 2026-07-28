@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/schemas/nis2-readiness-summary.schema.json",
+  "title": "Northsignal Labs NIS2 Readiness Summary Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "client_name",
+    "review_date",
+    "prepared_by",
+    "scope",
+    "overall_readiness",
+    "top_gap"
+  ],
+  "properties": {
+    "client_name": {"type": "string", "minLength": 1},
+    "review_date": {"type": "string", "minLength": 1},
+    "prepared_by": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "overall_readiness": {"type": "string", "enum": ["Ready", "Partial", "At risk", "Unknown"]},
+    "top_gap": {"type": "string", "minLength": 1},
+    "sector_notes": {"type": "string"},
+    "country_notes": {"type": "string"},
+    "evidence_areas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["area", "status", "evidence"],
+        "properties": {
+          "area": {"type": "string", "minLength": 1},
+          "status": {"type": "string", "enum": ["ready", "partial", "missing", "not_reviewed"]},
+          "evidence": {"type": "string"},
+          "owner": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gap", "impact", "next_action"],
+        "properties": {
+          "gap": {"type": "string", "minLength": 1},
+          "evidence_missing": {"type": "string"},
+          "impact": {"type": "string", "enum": ["Low", "Medium", "High"]},
+          "owner": {"type": "string"},
+          "target_date": {"type": "string"},
+          "next_action": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "questions_for_advisor": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question"],
+        "properties": {
+          "question": {"type": "string", "minLength": 1},
+          "context": {"type": "string"},
+          "owner": {"type": "string"}
+        }
+      }
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["priority", "action"],
+        "properties": {
+          "priority": {"type": "integer", "minimum": 1},
+          "action": {"type": "string", "minLength": 1},
+          "reason": {"type": "string"},
+          "owner": {"type": "string"},
+          "target_date": {"type": "string"}
+        }
+      }
+    }
+  }
+}

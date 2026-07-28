@@ -1,0 +1,140 @@
+{
+  "client_name": "Example Client Ltd",
+  "reporting_period": "2026-07-01 to 2026-07-31",
+  "prepared_by": "Example MSP security operations team",
+  "overall_posture": "Amber",
+  "top_recommendation": "Close the remaining privileged MFA exceptions and confirm the next backup restore test date.",
+  "areas": [
+    {
+      "area": "Identity and MFA",
+      "status": "Amber",
+      "notes": "97% MFA coverage; two break-glass or legacy exceptions remain documented.",
+      "evidence_source": "Microsoft Entra export"
+    },
+    {
+      "area": "Endpoint protection",
+      "status": "Green",
+      "notes": "All active devices have EDR agent coverage; one stale device is queued for removal.",
+      "evidence_source": "EDR device inventory"
+    },
+    {
+      "area": "Patch/update hygiene",
+      "status": "Amber",
+      "notes": "Eight devices have critical updates older than 14 days due to missed maintenance windows.",
+      "evidence_source": "RMM patch report"
+    },
+    {
+      "area": "Backups",
+      "status": "Green",
+      "notes": "99.2% job success this period; last restore test completed 2026-07-10.",
+      "evidence_source": "Backup console report"
+    },
+    {
+      "area": "Email/security awareness",
+      "status": "Green",
+      "notes": "Routine phishing and malware events were blocked; no confirmed compromise.",
+      "evidence_source": "Email security dashboard"
+    },
+    {
+      "area": "Network/VPN/firewall",
+      "status": "Amber",
+      "notes": "VPN users reviewed; three dormant accounts need manager confirmation before removal.",
+      "evidence_source": "Firewall/VPN user export"
+    }
+  ],
+  "changes": [
+    {
+      "change": "Enabled MFA for 14 additional users",
+      "impact": "Reduced identity exposure and improved coverage trend.",
+      "evidence": "Entra MFA registration export"
+    },
+    {
+      "change": "Removed six inactive standard accounts",
+      "impact": "Reduced attack surface and stale access.",
+      "evidence": "Ticket SEC-1024"
+    },
+    {
+      "change": "Completed backup restore test",
+      "impact": "Confirmed recoverability for one business-critical file share.",
+      "evidence": "Restore-test screenshot and ticket BAK-771"
+    }
+  ],
+  "metrics": [
+    {"metric": "MFA coverage", "current": "97%", "target": "100%", "trend": "up", "source": "Microsoft Entra / M365"},
+    {"metric": "Admin accounts reviewed", "current": "100%", "target": "100% monthly", "trend": "flat", "source": "Entra / AD"},
+    {"metric": "Devices missing EDR", "current": 0, "target": 0, "trend": "flat", "source": "EDR console"},
+    {"metric": "Critical patches overdue >14 days", "current": 8, "target": 0, "trend": "down", "source": "RMM / Intune"},
+    {"metric": "Backup jobs successful", "current": "99.2%", "target": ">=98%", "trend": "flat", "source": "Backup platform"},
+    {"metric": "Restore tests completed", "current": 1, "target": ">=1 quarterly", "trend": "new", "source": "Backup evidence"},
+    {"metric": "High-risk sign-ins", "current": 0, "target": "0 unresolved", "trend": "flat", "source": "Entra ID Protection"},
+    {"metric": "Phishing/malware blocked", "current": 43, "target": "informational", "trend": "not_tracked", "source": "Email security"}
+  ],
+  "incidents": [
+    {
+      "date": "2026-07-18",
+      "summary": "Suspicious mailbox rule attempt blocked by policy.",
+      "severity": "Medium",
+      "action_taken": "Reviewed account activity, reset session tokens, confirmed MFA registration.",
+      "current_status": "closed"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Privileged MFA exceptions remain open",
+      "business_impact": "Increases impact of credential theft for administrative accounts.",
+      "likelihood": "High",
+      "owner": "MSP service desk lead",
+      "due_date": "2026-08-07",
+      "status": "open"
+    },
+    {
+      "risk": "Dormant VPN accounts pending manager confirmation",
+      "business_impact": "Could preserve unnecessary remote access.",
+      "likelihood": "Medium",
+      "owner": "Client operations owner",
+      "due_date": "2026-08-14",
+      "status": "in_progress"
+    }
+  ],
+  "evidence": [
+    {"item": "MFA coverage export or screenshot", "status": "attached", "location": "Evidence folder / identity / 2026-07"},
+    {"item": "Privileged users reviewed", "status": "attached", "location": "Ticket SEC-1040"},
+    {"item": "Endpoint/EDR device coverage export", "status": "attached", "location": "Evidence folder / endpoint / 2026-07"},
+    {"item": "Patch compliance report", "status": "attached", "location": "RMM report export"},
+    {"item": "Backup success report", "status": "attached", "location": "Backup monthly summary"},
+    {"item": "Latest restore-test evidence", "status": "attached", "location": "Ticket BAK-771"},
+    {"item": "High-risk sign-in review", "status": "attached", "location": "Entra risk review export"},
+    {"item": "Firewall/VPN user review", "status": "partial", "location": "Manager confirmations pending for three users"}
+  ],
+  "recommended_actions": [
+    {
+      "priority": 1,
+      "action": "Remove or harden privileged MFA exceptions",
+      "reason": "Reduces identity attack path for high-impact accounts.",
+      "owner": "MSP service desk lead",
+      "due_date": "2026-08-07"
+    },
+    {
+      "priority": 2,
+      "action": "Complete patch remediation on eight overdue devices",
+      "reason": "Reduces exposure to known critical vulnerabilities.",
+      "owner": "Endpoint operations",
+      "due_date": "2026-08-10"
+    },
+    {
+      "priority": 3,
+      "action": "Confirm dormant VPN account removals",
+      "reason": "Reduces unnecessary remote access.",
+      "owner": "Client operations owner",
+      "due_date": "2026-08-14"
+    }
+  ],
+  "decision_log": [
+    {
+      "decision_needed": "Require phishing-resistant MFA for all administrator accounts",
+      "options": "Option A: enforce next cycle; Option B: phase in over two cycles",
+      "recommendation": "Approve phased enforcement with explicit exception owner and review date.",
+      "decision_date": "pending"
+    }
+  ]
+}

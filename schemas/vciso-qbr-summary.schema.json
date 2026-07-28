@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/schemas/vciso-qbr-summary.schema.json",
+  "title": "Northsignal Labs vCISO QBR Summary Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "client_name",
+    "quarter",
+    "meeting_date",
+    "prepared_by",
+    "scope",
+    "executive_summary"
+  ],
+  "properties": {
+    "client_name": {"type": "string", "minLength": 1},
+    "quarter": {"type": "string", "minLength": 1},
+    "meeting_date": {"type": "string", "minLength": 1},
+    "prepared_by": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "executive_summary": {"type": "string", "minLength": 1},
+    "attendees": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role"],
+        "properties": {
+          "role": {"type": "string", "minLength": 1},
+          "decision_responsibility": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "scorecard": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["area", "status", "business_impact"],
+        "properties": {
+          "area": {"type": "string", "minLength": 1},
+          "status": {"type": "string", "enum": ["green", "amber", "red", "unknown"]},
+          "evidence_date": {"type": "string"},
+          "business_impact": {"type": "string", "minLength": 1},
+          "next_action": {"type": "string"},
+          "owner": {"type": "string"}
+        }
+      }
+    },
+    "top_risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["risk", "status", "owner"],
+        "properties": {
+          "risk": {"type": "string", "minLength": 1},
+          "status": {"type": "string", "enum": ["green", "amber", "red", "unknown"]},
+          "evidence": {"type": "string"},
+          "owner": {"type": "string", "minLength": 1},
+          "decision_needed": {"type": "string"},
+          "review_trigger": {"type": "string"}
+        }
+      }
+    },
+    "decisions_requested": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["decision", "decision_type", "reason"],
+        "properties": {
+          "decision": {"type": "string", "minLength": 1},
+          "decision_type": {"type": "string", "enum": ["approve", "park", "escalate", "needs_review"]},
+          "reason": {"type": "string", "minLength": 1},
+          "options": {"type": "string"},
+          "decision_owner": {"type": "string"}
+        }
+      }
+    },
+    "action_register": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["priority", "action", "effort", "owner"],
+        "properties": {
+          "priority": {"type": "integer", "minimum": 1},
+          "action": {"type": "string", "minLength": 1},
+          "risk_reduced": {"type": "string"},
+          "effort": {"type": "string", "enum": ["S", "M", "L", "Unknown"]},
+          "owner": {"type": "string", "minLength": 1},
+          "due_date": {"type": "string"},
+          "status": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Northsignal Labs public-safe validation labels
+#
+# Purpose: make the future GitHub issue-template signal measurable after an
+# approved no-spend, non-personal GitHub release. These labels are metadata only:
+# no analytics, forms, contact capture, payment workflow, account creation, or
+# public upload is authorized by this file.
+- name: template-request
+  color: "0E8A16"
+  description: "Aggregate demand signal for a requested template or generator; no client/private data."
+- name: commercial-fit
+  color: "5319E7"
+  description: "Non-binding market signal for future monetization learning; not a sale or quote."
+- name: demand-signal
+  color: "1D76DB"
+  description: "Public-safe issue-template feedback that can be counted in aggregate only."
+- name: asset:msp-monthly-report
+  color: "BFDADC"
+  description: "Aggregate asset-category signal for MSP monthly reporting; count label totals only."
+- name: asset:nis2-readiness
+  color: "C5DEF5"
+  description: "Aggregate asset-category signal for NIS2/evidence readiness; count label totals only."
+- name: asset:m365-secure-score
+  color: "D4C5F9"
+  description: "Aggregate asset-category signal for M365 Secure Score reporting; count label totals only."
+- name: asset:cyber-insurance-evidence
+  color: "F9D0C4"
+  description: "Aggregate asset-category signal for cyber-insurance evidence workflows; count label totals only."
+- name: asset:vciso-qbr
+  color: "FEF2C0"
+  description: "Aggregate asset-category signal for vCISO/QBR workflows; count label totals only."

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M365 Secure Score Executive Report Template | Northsignal Labs</title>
+  <meta name="description" content="A free executive-facing Microsoft 365 Secure Score report template for MSPs and IT teams, with evidence checklist and JSON schema for local report generation." />
+  <meta property="og:title" content="M365 Secure Score Executive Report Template" />
+  <meta property="og:description" content="Turn Microsoft 365 Secure Score evidence into an executive-facing MSP report with trends, recommendations, exceptions, a JSON schema, and local generator path." />
+  <meta name="twitter:card" content="summary" />
+  <style>
+    :root{--bg:#080b12;--panel:#101725;--line:rgba(255,255,255,.12);--text:#edf3ff;--muted:#9aa8be;--accent:#7cc7ff;--warn:#ffd166;--good:#39d98a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 0 0,rgba(124,199,255,.16),transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:var(--accent)}header,main,footer{padding:28px clamp(18px,4vw,54px)}header{border-bottom:1px solid var(--line)}.brand{color:var(--muted);font-size:14px;letter-spacing:.08em;text-transform:uppercase}.hero{max-width:980px}.hero h1{font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-.06em;margin:10px 0 14px}.lede{font-size:clamp(18px,2vw,23px);color:#c7d4e8;max-width:880px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;border-radius:999px;padding:12px 16px;text-decoration:none;font-weight:700;border:1px solid var(--line)}.button.primary{background:var(--accent);color:#06111f;border-color:transparent}.button.secondary{color:var(--text);background:rgba(255,255,255,.04)}.grid{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:16px;margin:22px 0}.card,section{background:rgba(16,23,37,.92);border:1px solid var(--line);border-radius:20px;padding:20px}.card h3,section h2{margin-top:0}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted);font-size:12px}.notice{border-left:4px solid var(--warn);background:rgba(255,209,102,.08)}.template{background:#07101d;border-radius:16px;border:1px solid var(--line);padding:18px;overflow:auto}.template table{border-collapse:collapse;width:100%;min-width:760px;margin:12px 0}.template th,.template td{border:1px solid rgba(255,255,255,.16);padding:8px;text-align:left;vertical-align:top}.template th{background:#121d2e}.cols{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:14px}.checklist li{margin:6px 0}code,pre{background:rgba(255,255,255,.08);border-radius:8px}code{padding:1px 4px}pre{padding:14px;overflow:auto}footer{color:var(--muted)}@media(max-width:900px){.grid,.cols{grid-template-columns:1fr}.template table{font-size:14px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Northsignal Labs</div>
+    <div class="hero">
+      <h1>M365 Secure Score Executive Report Template</h1>
+      <p class="lede">A practical way for MSPs and IT teams to turn Microsoft Secure Score into a concise client-ready executive report with trend, evidence, exceptions, and next actions.</p>
+      <div class="cta">
+        <a class="button primary" href="assets/m365-secure-score-executive-report-template.md">Download Markdown template</a>
+        <a class="button secondary" href="schemas/m365-secure-score-report.schema.json">View JSON schema</a>
+        <a class="button secondary" href="#copy-template">Copy the report below</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="notice" aria-label="Start here full pack and request path">
+      <h2>Start here if Secure Score review becomes recurring reporting</h2>
+      <p>Use this M365 executive summary to explain tenant posture, then move into the full Northsignal Labs MSP Security Reporting Template Pack when the review needs a reusable monthly report, NIS2 evidence checklist, cyber-insurance evidence tracker, vCISO QBR agenda, sample-output previews, or a future public-safe template-request/commercial-fit signal path.</p>
+      <div class="cta">
+        <a class="button primary" href="README.md">Open the full template pack</a>
+        <a class="button secondary" href="download.html">Open start/download guide</a>
+        <a class="button secondary" href="sample-outputs.html">Preview sample outputs</a>
+        <a class="button secondary" href="msp-monthly-security-report-template.html">Use the MSP reporting anchor</a>
+        <a class="button secondary" href="request-signal.html">Choose request signal path</a>
+        <a class="button secondary" href=".github/ISSUE_TEMPLATE/template-request.yml">Future GitHub request template</a>
+        <a class="button secondary" href=".github/ISSUE_TEMPLATE/commercial-fit-signal.yml">Future commercial-fit template</a>
+      </div>
+      <p class="muted">No form, tracking script, payment link, contact collection, external account, or public release is active here; the request link is a public-safe GitHub issue-template path for a future approved non-personal channel.</p>
+    </section>
+
+    <div class="grid" aria-label="Template summary">
+      <div class="card"><span class="pill">Built for</span><h3>MSP client reporting</h3><p class="muted">Convert tenant security posture into an executive-facing monthly or QBR-ready update.</p></div>
+      <div class="card"><span class="pill">Covers</span><h3>Score, controls, risks</h3><p class="muted">Secure Score trend, control areas, completed improvements, recommendations, and exceptions.</p></div>
+      <div class="card"><span class="pill">Automation path</span><h3>Schema included</h3><p class="muted">A companion JSON schema enables a future local no-spend report generator prototype.</p></div>
+    </div>
+
+    <section class="notice">
+      <h2>Use disclaimer</h2>
+      <p>This is an operational reporting template, not legal, audit, insurance, Microsoft licensing, or compliance advice. Microsoft Secure Score is one signal, not a complete security measurement. Validate all findings in the tenant before sending externally.</p>
+    </section>
+
+    <section>
+      <h2>10-minute evidence collection</h2>
+      <ul class="checklist"><li>[ ] Current Microsoft Secure Score percentage and points achieved/available</li><li>[ ] Previous-period score, if available</li><li>[ ] Top improvement actions from Secure Score</li><li>[ ] MFA/conditional-access coverage evidence</li><li>[ ] Privileged role/admin account review</li><li>[ ] Legacy authentication or risky sign-in evidence</li><li>[ ] Device compliance/management snapshot, if Intune is used</li><li>[ ] Client-approved exceptions or accepted risks</li></ul>
+    </section>
+
+    <section id="copy-template">
+      <h2>Copy/paste executive report</h2>
+      <div class="template">
+        <h3>1. Executive summary</h3>
+        <p><strong>Client:</strong> [client name]<br><strong>Tenant:</strong> [tenant name / tenant id optional]<br><strong>Reporting period:</strong> [YYYY-MM-DD to YYYY-MM-DD]<br><strong>Prepared by:</strong> [MSP / IT team]<br><strong>Current Secure Score:</strong> [score_percent]% ([points_achieved] / [points_available] points)<br><strong>Trend:</strong> [up / flat / down] compared with [previous_score_percent]% last period<br><strong>Overall posture:</strong> [Green / Amber / Red]</p>
+        <p>Microsoft Secure Score improved/declined/remained stable during this period. The most important action for leadership is: <code>[single decision or action needed]</code>.</p>
+        <h3>2. Score trend</h3>
+        <table><thead><tr><th>Metric</th><th>Current</th><th>Previous</th><th>Change</th><th>Notes</th></tr></thead><tbody><tr><td>Secure Score percentage</td><td>[%]</td><td>[%]</td><td>[+/- points]</td><td>[summary]</td></tr><tr><td>Points achieved</td><td>[#]</td><td>[#]</td><td>[+/-]</td><td>[summary]</td></tr><tr><td>Improvement actions completed</td><td>[#]</td><td>[#]</td><td>[+/-]</td><td>[summary]</td></tr><tr><td>High-impact actions remaining</td><td>[#]</td><td>[#]</td><td>[+/-]</td><td>[summary]</td></tr></tbody></table>
+        <h3>3. Control-area summary</h3>
+        <table><thead><tr><th>Area</th><th>Status</th><th>Evidence source</th><th>Executive note</th></tr></thead><tbody><tr><td>Identity and MFA</td><td>[Green/Amber/Red]</td><td>[Secure Score / Entra]</td><td>[e.g. MFA gap remains for 3 users]</td></tr><tr><td>Admin and privileged access</td><td>[Green/Amber/Red]</td><td>[Entra roles / PIM]</td><td>[e.g. stale admin account removed]</td></tr><tr><td>Device management</td><td>[Green/Amber/Red]</td><td>[Intune / Defender]</td><td>[e.g. unmanaged endpoints still exist]</td></tr><tr><td>Email and collaboration protection</td><td>[Green/Amber/Red]</td><td>[Defender / Exchange]</td><td>[e.g. anti-phishing policy reviewed]</td></tr><tr><td>Data protection</td><td>[Green/Amber/Red]</td><td>[Purview / M365]</td><td>[e.g. sensitivity labels not deployed]</td></tr><tr><td>Monitoring and response</td><td>[Green/Amber/Red]</td><td>[Defender / alerts]</td><td>[e.g. alert triage ownership confirmed]</td></tr></tbody></table>
+        <h3>4. Recommended next actions</h3>
+        <table><thead><tr><th>Priority</th><th>Recommended action</th><th>Expected impact</th><th>Owner</th><th>Target date</th><th>Decision needed</th></tr></thead><tbody><tr><td>1</td><td>[action]</td><td>[score/risk impact]</td><td>[name/team]</td><td>[date]</td><td>[yes/no/which option]</td></tr><tr><td>2</td><td>[action]</td><td>[score/risk impact]</td><td>[name/team]</td><td>[date]</td><td>[yes/no/which option]</td></tr><tr><td>3</td><td>[action]</td><td>[score/risk impact]</td><td>[name/team]</td><td>[date]</td><td>[yes/no/which option]</td></tr></tbody></table>
+        <h3>5. Exceptions and evidence</h3>
+        <table><thead><tr><th>Exception</th><th>Reason</th><th>Compensating control</th><th>Owner</th><th>Review date</th></tr></thead><tbody><tr><td>[e.g. break-glass account excluded from MFA]</td><td>[reason]</td><td>[monitoring/restriction]</td><td>[owner]</td><td>[date]</td></tr></tbody></table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Structured input for local automation</h2>
+      <p class="muted">The included JSON schema defines the minimum fields needed for a future no-spend local report generator.</p>
+      <pre>{
+  "client_name": "Example Ltd",
+  "reporting_period": "2026-07",
+  "secure_score_percent": 57,
+  "previous_score_percent": 52,
+  "overall_posture": "Amber",
+  "top_recommendation": "Enable phishing-resistant MFA for privileged roles."
+}</pre>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Template pack navigation">
+      <p><a href="index.html">Northsignal Labs index</a> · <a href="README.md">Template pack README</a> · <a href="msp-monthly-security-report-template.html">MSP monthly report</a> · <a href="nis2-readiness-checklist.html">NIS2 checklist</a> · <a href="cyber-insurance-evidence-checklist.html">Cyber insurance checklist</a> · <a href="vciso-qbr-agenda-template.html">vCISO QBR agenda</a></p>
+    </nav>
+    <p>Northsignal Labs is a small independent automation lab. This page is a locally prepared no-spend asset; it makes no customer, certification, partnership, legal, compliance, Microsoft affiliation, or revenue claims.</p>
+  </footer>
+</body>
+</html>

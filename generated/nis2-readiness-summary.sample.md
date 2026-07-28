@@ -1,0 +1,64 @@
+# NIS2 Readiness Evidence Summary — Example Manufacturing Services Ltd
+
+Northsignal Labs — local operational evidence summary.
+Generated: 2026-07-28 05:45 UTC
+
+> This is an operational evidence summary, not legal, regulatory, audit, compliance, certification, or professional-services advice. NIS2 applicability, formal obligations, and reporting duties should be confirmed by qualified legal/compliance advisors.
+
+## Executive summary
+
+- Client/entity: Example Manufacturing Services Ltd
+- Review date: 2026-07-24
+- Prepared by: Example MSP security operations team
+- Scope: Initial operational evidence review for core IT services, identity, backup, incident, supplier, and management-review records.
+- Overall readiness: Partial
+- Highest-priority gap: Restore-test evidence and supplier responsibility mapping are not yet complete.
+
+Evidence areas: ready=2, partial=4, missing=2, not_reviewed=0.
+
+## Applicability context for qualified review
+
+- Sector/supply-chain notes: Potential supply-chain relevance should be confirmed by qualified legal/compliance advisors; this sample does not determine NIS2 applicability.
+- Country/local transposition notes: Client operations and customers span multiple EU/EEA markets; local transposition and contractual obligations need advisor review.
+
+## Evidence area status
+
+| Area | Status | Evidence | Owner | Notes |
+| --- | --- | --- | --- | --- |
+| Backup, continuity, and recovery | missing | Backup success report exists, but latest restore-test evidence is missing. | Infrastructure lead | Run and document a restore test before next review. |
+| Supplier and MSP operating model | missing | Supplier list exists; MSP/client responsibility split is not documented per service. | Account manager | Create a responsibility matrix before renewal/QBR. |
+| Asset, service, and dependency mapping | partial | Endpoint and SaaS inventory exported; critical service dependency map is still draft. | IT manager | Map backup, identity, and supplier dependencies per critical service. |
+| Governance and risk management | partial | Cyber risk register and security policy exist; management review minutes are inconsistent. | Operations director | Add a recurring leadership review cadence. |
+| Incident handling and reporting readiness | partial | Incident response plan exists; external notification decision path needs advisor review. | Security lead | Do not treat this sample as legal reporting guidance. |
+| Vulnerability, patching, and configuration | partial | Patch compliance report available; exception register is incomplete. | Endpoint engineering | Add owners and target dates for delayed high-risk patches. |
+| Awareness and training | ready | Annual awareness completion summary and admin incident-training notes are stored in the evidence folder. | HR operations | Keep generic completion summary only; no personal training data in public examples. |
+| Identity and access controls | ready | MFA coverage report and privileged account review completed this quarter. | MSP service desk lead | Keep break-glass account review evidence with monthly report pack. |
+
+## Gap register
+
+| Gap | Evidence missing | Impact | Owner | Target date | Next action |
+| --- | --- | --- | --- | --- | --- |
+| No documented restore test in current evidence folder | Restore test report, result summary, lessons learned | High | Infrastructure lead | 2026-08-15 | Run a scoped restore test and attach a short evidence summary. |
+| External notification decision path needs qualified review | Advisor-reviewed incident reporting decision tree | Medium | Security lead | 2026-09-01 | Prepare operational facts/questions for legal/compliance advisor review. |
+| Supplier/MSP responsibility split is not mapped to critical services | Responsibility matrix, service dependency owner list | Medium | Account manager | 2026-08-22 | Draft a RACI-style matrix for MSP, client, and critical SaaS suppliers. |
+
+## Questions for legal/compliance advisor review
+
+| Question | Context | Owner |
+| --- | --- | --- |
+| Which entity, country, sector, and contract facts matter most for NIS2 applicability? | Client has cross-border customers and supplier obligations. | Operations director |
+| What incident reporting decision points should the operational playbook escalate for qualified review? | MSP needs a safe escalation path without making legal conclusions. | Security lead |
+
+## Recommended next actions
+
+| Priority | Action | Reason | Owner | Target date |
+| --- | --- | --- | --- | --- |
+| 1 | Complete restore-test evidence and record lessons learned. | Backup/recovery proof is currently the highest-risk missing operational evidence. | Infrastructure lead | 2026-08-15 |
+| 2 | Create a critical-service responsibility matrix for client, MSP, and supplier roles. | Clarifies operating ownership before incident or continuity discussions. | Account manager | 2026-08-22 |
+| 3 | Prepare advisor questions for NIS2 applicability and notification decision paths. | Keeps the MSP evidence workflow operational and avoids legal overclaiming. | Security lead | 2026-09-01 |
+
+## Suggested MSP follow-up
+
+1. Attach source evidence before sharing privately with stakeholders.
+2. Keep applicability and notification questions separate from operational evidence collection.
+3. Use qualified legal/compliance review for country/entity/sector obligations before making formal claims.

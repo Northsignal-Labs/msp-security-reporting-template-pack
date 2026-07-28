@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>vCISO QBR Agenda Template for MSPs | Northsignal Labs</title>
+  <meta name="description" content="A free vCISO-style quarterly business review agenda for MSPs: executive security scorecard, risk prompts, action register, and safe summary wording." />
+  <meta property="og:title" content="vCISO QBR Agenda Template for MSPs" />
+  <meta property="og:description" content="Free vCISO-style QBR agenda for MSPs with executive scorecard prompts, risk review structure, action register, and client-safe summary wording." />
+  <meta name="twitter:card" content="summary" />
+  <style>
+    :root{--bg:#080b12;--panel:#101725;--line:rgba(255,255,255,.12);--text:#edf3ff;--muted:#9aa8be;--accent:#7cc7ff;--warn:#ffd166;--good:#39d98a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 0 0,rgba(124,199,255,.16),transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:var(--accent)}header,main,footer{padding:28px clamp(18px,4vw,54px)}header{border-bottom:1px solid var(--line)}.brand{color:var(--muted);font-size:14px;letter-spacing:.08em;text-transform:uppercase}.hero{max-width:980px}.hero h1{font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-.06em;margin:10px 0 14px}.lede{font-size:clamp(18px,2vw,23px);color:#c7d4e8;max-width:860px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;border-radius:999px;padding:12px 16px;text-decoration:none;font-weight:700;border:1px solid var(--line)}.button.primary{background:var(--accent);color:#06111f;border-color:transparent}.button.secondary{color:var(--text);background:rgba(255,255,255,.04)}.grid{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:16px;margin:22px 0}.card,section{background:rgba(16,23,37,.92);border:1px solid var(--line);border-radius:20px;padding:20px}.card h3,section h2{margin-top:0}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted);font-size:12px}.notice{border-left:4px solid var(--warn);background:rgba(255,209,102,.08)}.template{background:#07101d;border-radius:16px;border:1px solid var(--line);padding:18px;overflow:auto}.template table{border-collapse:collapse;width:100%;min-width:760px;margin:12px 0}.template th,.template td{border:1px solid rgba(255,255,255,.16);padding:8px;text-align:left;vertical-align:top}.template th{background:#121d2e}.cols{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:14px}code{background:#07101d;border:1px solid var(--line);border-radius:8px;padding:2px 5px}@media(max-width:900px){.grid,.cols{grid-template-columns:1fr}.template table{min-width:680px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Northsignal Labs</div>
+    <div class="hero">
+      <h1>vCISO QBR Agenda Template for MSPs</h1>
+      <p class="lede">A practical quarterly security review format that helps MSPs turn technical evidence into executive decisions, risk ownership, and next-quarter actions.</p>
+      <div class="cta">
+        <a class="button primary" href="assets/vciso-qbr-agenda-template.md">Download Markdown template</a>
+        <a class="button secondary" href="generated/vciso-qbr-summary.sample.html">Preview generated QBR summary</a>
+        <a class="button secondary" href="samples/vciso-qbr-summary.sample.json">Inspect sample JSON</a>
+        <a class="button secondary" href="tools/vciso_qbr_summary_generator.py">Review local generator</a>
+        <a class="button secondary" href="#copy-template">Copy the agenda below</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="notice" aria-label="Start here full pack and request path">
+      <h2>Start here if the QBR needs repeatable reporting</h2>
+      <p>Use this QBR agenda to structure the leadership meeting, then move into the full Northsignal Labs MSP Security Reporting Template Pack when the conversation needs a reusable monthly report, M365 Secure Score executive summary, NIS2 evidence checklist, cyber-insurance evidence tracker, sample-output previews, or a future public-safe template-request/commercial-fit signal path.</p>
+      <div class="cta">
+        <a class="button primary" href="README.md">Open the full template pack</a>
+        <a class="button secondary" href="download.html">Open start/download guide</a>
+        <a class="button secondary" href="sample-outputs.html">Preview sample outputs</a>
+        <a class="button secondary" href="msp-monthly-security-report-template.html">Use the MSP reporting anchor</a>
+        <a class="button secondary" href="request-signal.html">Choose request signal path</a>
+        <a class="button secondary" href=".github/ISSUE_TEMPLATE/template-request.yml">Future GitHub request template</a>
+        <a class="button secondary" href=".github/ISSUE_TEMPLATE/commercial-fit-signal.yml">Future commercial-fit template</a>
+      </div>
+      <p class="muted">No form, tracking script, payment link, contact collection, external account, or public release is active here; the request link is a public-safe GitHub issue-template path for a future approved non-personal channel.</p>
+    </section>
+
+    <div class="grid" aria-label="Template summary">
+      <div class="card"><span class="pill">Built for</span><h3>MSP client QBRs</h3><p class="muted">Run a 45–60 minute executive security review without drowning the client in ticket detail.</p></div>
+      <div class="card"><span class="pill">Includes</span><h3>Scorecard + action register</h3><p class="muted">Pre-meeting checklist, risk prompts, RAG scorecard, decisions requested, and safe summary wording.</p></div>
+      <div class="card"><span class="pill">Risk control</span><h3>No false vCISO claims</h3><p class="muted">Operational planning template only; no certification, legal, audit, insurance, or compliance claims.</p></div>
+    </div>
+
+    <section class="notice">
+      <h2>Use disclaimer</h2>
+      <p>This is an operational meeting and planning template, not legal, compliance, audit, insurance, regulatory, or professional vCISO advice. Adapt it to the client, jurisdiction, contracts, risk appetite, and qualified advisors.</p>
+    </section>
+
+    <section id="copy-template">
+      <h2>45–60 minute agenda</h2>
+      <div class="template"><table><thead><tr><th>Time</th><th>Segment</th><th>Purpose</th><th>Output</th></tr></thead><tbody><tr><td>0–5 min</td><td>Executive context</td><td>Confirm business changes, upcoming projects, incidents, insurance/compliance triggers, and decision makers</td><td>Updated context notes</td></tr><tr><td>5–12 min</td><td>Security scorecard</td><td>Summarize the 5–8 metrics executives can understand</td><td>Red/amber/green scorecard</td></tr><tr><td>12–22 min</td><td>Top risks and exceptions</td><td>Discuss the highest-risk unresolved items, not every ticket</td><td>Risk register updates and owners</td></tr><tr><td>22–32 min</td><td>Control evidence review</td><td>Show evidence for MFA, patching, backups, endpoint/email protection, and incident readiness</td><td>Evidence gaps and confidence level</td></tr><tr><td>32–42 min</td><td>Roadmap decisions</td><td>Pick next quarter’s security priorities based on risk, effort, and budget sensitivity</td><td>Approved/parked/needs-review decisions</td></tr><tr><td>42–52 min</td><td>Incident and change lessons</td><td>Review incidents, near misses, major changes, and postmortem findings</td><td>Action items and due dates</td></tr><tr><td>52–60 min</td><td>Closeout</td><td>Confirm owners, dates, approvals, and next meeting</td><td>Final action register</td></tr></tbody></table></div>
+    </section>
+
+    <section>
+      <h2>Pre-meeting collection checklist</h2>
+      <div class="cols">
+        <div class="card"><h3>Evidence to gather</h3><ul><li>[ ] Last quarter’s action register</li><li>[ ] Current user/admin count and system changes</li><li>[ ] MFA/conditional access coverage evidence</li><li>[ ] Endpoint protection/EDR deployment summary</li><li>[ ] Patch/vulnerability exception report</li></ul></div>
+        <div class="card"><h3>Context to gather</h3><ul><li>[ ] Backup success/failure and restore test evidence</li><li>[ ] Email security and awareness indicators</li><li>[ ] Incidents, near misses, or tabletop notes</li><li>[ ] Open risk exceptions and owner approvals</li><li>[ ] Upcoming renewals, audits, or compliance deadlines</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Executive security scorecard</h2>
+      <div class="template"><table><thead><tr><th>Area</th><th>Status</th><th>Evidence date</th><th>Business impact</th><th>Next action</th><th>Owner</th></tr></thead><tbody><tr><td>Identity and MFA</td><td>[green/amber/red]</td><td>[date]</td><td>[short impact]</td><td>[action]</td><td>[owner]</td></tr><tr><td>Endpoint and device security</td><td>[green/amber/red]</td><td>[date]</td><td>[short impact]</td><td>[action]</td><td>[owner]</td></tr><tr><td>Backup and recovery readiness</td><td>[green/amber/red]</td><td>[date]</td><td>[short impact]</td><td>[action]</td><td>[owner]</td></tr><tr><td>Patching and vulnerability exposure</td><td>[green/amber/red]</td><td>[date]</td><td>[short impact]</td><td>[action]</td><td>[owner]</td></tr><tr><td>Incident response readiness</td><td>[green/amber/red]</td><td>[date]</td><td>[short impact]</td><td>[action]</td><td>[owner]</td></tr></tbody></table></div>
+    </section>
+
+    <section>
+      <h2>Risk prompts and action register</h2>
+      <div class="cols">
+        <div class="card"><h3>Discussion prompts</h3><ol><li>What changed in the business since the last review?</li><li>Which unresolved item could create the largest interruption or loss?</li><li>Which exception needs formal business-owner approval?</li><li>Which control is evidence-ready for insurance, audit, or customer due diligence?</li><li>Which improvement is low-effort/high-confidence next quarter?</li></ol></div>
+        <div class="card"><h3>Safe wording</h3><p class="muted">Prefer bounded evidence-backed statements like <code>MFA coverage improved from [x]% to [y]% for in-scope accounts based on export dated [date]</code>. Avoid saying the client is “secure” or that risk has been eliminated.</p></div>
+      </div>
+      <div class="template"><table><thead><tr><th>Priority</th><th>Action</th><th>Risk reduced</th><th>Effort</th><th>Decision needed</th><th>Owner</th><th>Due date</th><th>Status</th></tr></thead><tbody><tr><td>1</td><td>[specific action]</td><td>[risk]</td><td>[S/M/L]</td><td>[approve/park/escalate]</td><td>[owner]</td><td>[date]</td><td>[open/in progress/done]</td></tr></tbody></table></div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Template pack navigation">
+      <p><a href="index.html">Northsignal Labs index</a> · <a href="README.md">Template pack README</a> · <a href="msp-monthly-security-report-template.html">MSP monthly report</a> · <a href="nis2-readiness-checklist.html">NIS2 checklist</a> · <a href="m365-secure-score-executive-report-template.html">M365 report</a> · <a href="cyber-insurance-evidence-checklist.html">Cyber insurance checklist</a></p>
+    </nav>
+    <p>Northsignal Labs is a small independent automation lab. This page is a locally prepared no-spend asset; it makes no customer, certification, partnership, legal, compliance, audit, insurance, professional-service, or revenue claims.</p>
+  </footer>
+</body>
+</html>

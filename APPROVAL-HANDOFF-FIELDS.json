@@ -1,0 +1,36 @@
+{
+  "project": "Northsignal Labs MSP Security Reporting Template Pack",
+  "purpose": "Machine-readable approval preflight for the local public-URL cutover workflow. This file does not approve publication; it records whether reviewer-supplied fields are complete enough to replace the northsignal-labs.local sitemap/robots placeholder.",
+  "status": "public_channel_fields_supplied_pending_url_cutover",
+  "approved_for_cutover": true,
+  "last_reviewed_at": "2026-07-28T10:24:44Z",
+  "required_fields": {
+    "approved_channel": "GitHub Pages under Northsignal-Labs organization repository msp-security-reporting-template-pack",
+    "public_base_url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/",
+    "account_repository_display_name": "Northsignal Labs",
+    "account_repository_metadata_constraints": "No personal identity, private contact details, personal account links, invented founder claims, customer claims, certifications, partnerships, testimonials, revenue claims, payment links, analytics, forms, sensitive-data collection, paid domain, paid hosting, ads, subscriptions, marketplace fee, paid add-ons, purchases, or spend in public profile, repository metadata, release text, issue templates, or commit metadata.",
+    "spend_confirmation": true,
+    "financial_workflow_confirmation": true,
+    "data_collection_confirmation": true,
+    "claims_identity_approval": true,
+    "final_reviewer": "Northsignal launch reviewer"
+  },
+  "allowed_public_base_url_schemes": [
+    "https"
+  ],
+  "blocked_public_base_url_hosts": [
+    "northsignal-labs.local",
+    "localhost",
+    "127.0.0.1"
+  ],
+  "cutover_allowed_only_when": [
+    "approved_for_cutover is true",
+    "all required text fields are non-empty and contain no private personal identity details",
+    "public_base_url uses HTTPS and is not the placeholder host",
+    "spend_confirmation is true, confirming no paid domain, hosting, ads, subscription, marketplace fee, paid add-on, or purchase is required",
+    "financial_workflow_confirmation is true, confirming no payout, tax/KYC, checkout, sponsorship, active monetization link, paid listing, or other financial workflow is required",
+    "data_collection_confirmation is true, confirming no analytics script, cookie banner, contact form, newsletter signup, private inbox, or lead capture workflow is required",
+    "claims_identity_approval is true, confirming Northsignal Labs is described only as a small independent automation lab with no fake founder or unsupported claims"
+  ],
+  "current_hold_reason": "Concrete reviewer-supplied public channel fields have been applied locally. Run tools/validate_approval_handoff.py, then tools/perform_public_url_cutover.py as a dry run before any --apply cutover. This file still does not authorize account creation, upload, public posting, analytics/forms, payment/KYC/quote/invoice/sales workflows, or spend."
+}

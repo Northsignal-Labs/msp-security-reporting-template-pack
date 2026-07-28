@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Start and download — Northsignal Labs MSP Security Reporting Template Pack</title>
+  <meta name="description" content="Browser-friendly start guide for the Northsignal Labs MSP security reporting template pack: pick the right template, preview outputs, and use local generators without forms, analytics, payment, or contact capture." />
+  <meta property="og:title" content="Northsignal Labs download and start guide" />
+  <meta property="og:description" content="Choose the right MSP reporting, NIS2, M365, cyber-insurance, or vCISO template path from a static no-spend Northsignal Labs release." />
+  <meta name="twitter:card" content="summary" />
+  <style>
+    body{margin:0;background:#080b12;color:#edf3ff;font-family:Inter,system-ui,sans-serif;line-height:1.5}
+    header,main{padding:28px clamp(18px,4vw,44px)}
+    header{border-bottom:1px solid rgba(255,255,255,.1);background:radial-gradient(circle at 0 0,rgba(124,199,255,.18),transparent 35%),#080b12}
+    h1{margin:0;font-size:clamp(30px,4vw,48px);letter-spacing:-.05em}.muted{color:#8d9bb3}.grid{display:grid;grid-template-columns:repeat(2,minmax(240px,1fr));gap:16px}.card{background:#101725;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:18px}.pill{display:inline-block;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:5px 9px;color:#8d9bb3;font-size:12px}.high{color:#39d98a}.warn{color:#ffd166}a{color:#7cc7ff}@media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Start and download guide</h1>
+  <p class="muted">Pick the fastest useful path through the Northsignal Labs MSP Security Reporting Template Pack before running any local tools.</p>
+</header>
+<main>
+  <section class="card" style="margin-bottom:18px;border-color:rgba(57,217,138,.35);background:linear-gradient(135deg,rgba(57,217,138,.12),rgba(16,23,37,.96))">
+    <span class="pill high">Fastest value path</span>
+    <h2>Start with the monthly reporting workflow</h2>
+    <ol>
+      <li>Open the <a href="msp-monthly-security-report-template.html">MSP monthly security report page</a> for the core recurring reporting use case.</li>
+      <li>Preview generated examples in <a href="sample-outputs.html">sample-outputs.html</a> before running scripts.</li>
+      <li>Use <a href="generator-quickstart.html">generator-quickstart.html</a> for the one-command local proof path across all five workflows.</li>
+      <li>After an approved public launch, open <a href="request-signal.html">request-signal.html</a> to choose the safe template-request or commercial-fit category before filing anything.</li>
+      <li>Use the matching Markdown templates, JSON schemas, sample inputs, and local generators below only if they fit your workflow.</li>
+      <li>After an approved public launch, use structured GitHub issue templates for public-safe template requests or non-binding commercial-fit signal; do not use forms, analytics, private inboxes, money-collection links, sales quotes, invoices, or contact collection.</li>
+    </ol>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <span class="pill high">Recommended first</span>
+      <h2>Monthly MSP client reporting</h2>
+      <p class="muted">Reusable monthly report template plus local JSON-to-Markdown/HTML generation.</p>
+      <ul>
+        <li><a href="msp-monthly-security-report-template.html">Landing page</a></li>
+        <li><a href="assets/msp-monthly-security-report-template.md">Markdown template</a></li>
+        <li><a href="schemas/msp-monthly-security-report.schema.json">JSON schema</a> and <a href="samples/msp-monthly-security-report.sample.json">sample JSON</a></li>
+        <li><a href="generated/msp-monthly-security-report.sample.html">Generated HTML sample</a></li>
+        <li><a href="generator-quickstart.html">One-command generator quickstart</a></li>
+        <li><a href="tools/msp_monthly_security_report_generator.py">Local generator</a></li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="pill">Evidence scoping</span>
+      <h2>NIS2 readiness checklist</h2>
+      <p class="muted">Operational evidence checklist for MSP/client readiness conversations; not legal or compliance advice.</p>
+      <ul>
+        <li><a href="nis2-readiness-checklist.html">Landing page</a></li>
+        <li><a href="assets/nis2-readiness-checklist.md">Markdown checklist</a></li>
+        <li><a href="schemas/nis2-readiness-summary.schema.json">JSON schema</a> and <a href="samples/nis2-readiness-summary.sample.json">sample JSON</a></li>
+        <li><a href="generated/nis2-readiness-summary.sample.html">Generated HTML sample</a></li>
+        <li><a href="generator-quickstart.html">One-command generator quickstart</a></li>
+        <li><a href="tools/nis2_readiness_summary_generator.py">Local generator</a></li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="pill">M365 posture</span>
+      <h2>M365 Secure Score executive reporting</h2>
+      <p class="muted">Executive summary, control themes, action priorities, and evidence-backed recommendations from structured JSON.</p>
+      <ul>
+        <li><a href="m365-secure-score-executive-report-template.html">Landing page</a></li>
+        <li><a href="assets/m365-secure-score-executive-report-template.md">Markdown template</a></li>
+        <li><a href="schemas/m365-secure-score-report.schema.json">JSON schema</a> and <a href="samples/m365-secure-score-report.sample.json">sample JSON</a></li>
+        <li><a href="generated/m365-secure-score-report.sample.html">Generated HTML sample</a></li>
+        <li><a href="generator-quickstart.html">One-command generator quickstart</a></li>
+        <li><a href="tools/m365_secure_score_report_generator.py">Local generator</a></li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="pill">Insurance evidence</span>
+      <h2>Cyber-insurance gap register</h2>
+      <p class="muted">Evidence-only questionnaire/gap-register workflow for renewal prep; not insurance, legal, or brokerage advice.</p>
+      <ul>
+        <li><a href="cyber-insurance-evidence-checklist.html">Landing page</a></li>
+        <li><a href="assets/cyber-insurance-evidence-checklist.md">Markdown checklist</a></li>
+        <li><a href="schemas/cyber-insurance-gap-register.schema.json">JSON schema</a> and <a href="samples/cyber-insurance-gap-register.sample.json">sample JSON</a></li>
+        <li><a href="generated/cyber-insurance-gap-register.sample.html">Generated HTML sample</a></li>
+        <li><a href="generator-quickstart.html">One-command generator quickstart</a></li>
+        <li><a href="tools/cyber_insurance_gap_register_generator.py">Local generator</a></li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="pill">Governance cadence</span>
+      <h2>vCISO/QBR meeting structure</h2>
+      <p class="muted">Agenda, scorecard prompts, decision log, and action-register structure for recurring governance reviews.</p>
+      <ul>
+        <li><a href="vciso-qbr-agenda-template.html">Landing page</a></li>
+        <li><a href="assets/vciso-qbr-agenda-template.md">Markdown template</a></li>
+        <li><a href="schemas/vciso-qbr-summary.schema.json">JSON schema</a> and <a href="samples/vciso-qbr-summary.sample.json">sample JSON</a></li>
+        <li><a href="generated/vciso-qbr-summary.sample.html">Generated HTML sample</a></li>
+        <li><a href="generator-quickstart.html">One-command generator quickstart</a></li>
+        <li><a href="tools/vciso_qbr_summary_generator.py">Local generator</a></li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="pill">Next request signal</span>
+      <h2>What to ask for after launch</h2>
+      <p class="muted">Use aggregate public signal only: stars, forks, watchers, open issues, and labeled template-request/commercial-fit counts.</p>
+      <ul>
+        <li><a href="REQUEST-ROADMAP.md">Request roadmap</a></li>
+        <li><a href="request-signal.html">Browser request signal guide</a></li>
+        <li><a href=".github/ISSUE_TEMPLATE/template-request.yml">Template-request issue template</a></li>
+        <li><a href=".github/ISSUE_TEMPLATE/commercial-fit-signal.yml">Commercial-fit issue template</a></li>
+        <li><a href="README.md">Full repository README</a></li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="card" style="margin-top:18px">
+    <span class="pill warn">Safe-use boundary</span>
+    <h2>What this static pack does not include</h2>
+    <p class="muted">No analytics scripts, cookies, forms, newsletter, private inbox, lead capture, money-collection links, purchase flow, payout, tax/KYC, quote/invoice workflow, sponsorship, commission/partner links, paid hosting, ads, marketplace placement, personal identity exposure, invented founder claims, customer claims, testimonial claims, certification claims, partnership claims, revenue claims, or outcome guarantees.</p>
+  </section>
+</main>
+</body>
+</html>

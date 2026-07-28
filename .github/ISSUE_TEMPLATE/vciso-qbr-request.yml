@@ -1,0 +1,53 @@
+name: vCISO/QBR request
+about: Public-safe request signal for the vCISO/QBR planning workflow
+labels: [template-request, demand-signal, asset:vciso-qbr]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this asset-specific template when your request is about the vCISO/QBR agenda, summary, or action-register workflow. The asset label lets Northsignal Labs count workflow-level demand in aggregate without reading issue bodies or collecting personal/client data.
+
+        Do not include client names, private security details, screenshots, logs, credentials, personal contact details, contract terms, quote/invoice requests, payment data, risk-acceptance decisions, regulated details, or confidential information. These assets are operational meeting/reporting aids only, not professional vCISO services, risk acceptance, legal, compliance, audit, certification, or professional-services advice.
+  - type: dropdown
+    id: request-intent
+    attributes:
+      label: What improvement would help the vCISO/QBR workflow most?
+      description: Choose a generic improvement type only; do not identify a client, prospect, employer, deal, risk owner, or contact.
+      options:
+        - More finished QBR/example outputs
+        - Local generator input/import support
+        - Clearer executive summary or one-page output
+        - Action-register or decision-log improvements
+        - Documentation/runbook guidance for MSP operators
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: operational-urgency
+    attributes:
+      label: How soon would this help with a real operational workflow?
+      options:
+        - This week
+        - This month
+        - This quarter
+        - Later / exploratory
+        - No current operational need
+    validations:
+      required: true
+  - type: textarea
+    id: requested-improvement
+    attributes:
+      label: What would make the vCISO/QBR workflow more useful?
+      description: Keep this generic and public-safe. Do not share client-specific, private, regulated, risk-acceptance, or confidential details.
+      placeholder: "Example: add a repeatable action-register generator, add a one-page QBR summary, or add board-ready decision-log prompts."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety-confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included client names, private security details, credentials, logs, screenshots, personal contact details, contract terms, payment data, regulated details, risk-acceptance decisions, or confidential information.
+          required: true
+        - label: I understand this is public operational QBR/template feedback only, not a quote, invoice, purchase, sales contact, professional vCISO service request, risk acceptance, or regulated/professional advice.
+          required: true

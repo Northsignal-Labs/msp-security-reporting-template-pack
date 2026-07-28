@@ -1,0 +1,87 @@
+{
+  "client_name": "Example MSP Client",
+  "tenant_name": "example-client.onmicrosoft.com",
+  "reporting_period": "July 2026",
+  "prepared_by": "Northsignal Labs automation prototype",
+  "secure_score_percent": 62,
+  "previous_score_percent": 55,
+  "points_achieved": 620,
+  "points_available": 1000,
+  "overall_posture": "Amber",
+  "top_recommendation": "Prioritise phishing-resistant MFA for administrators and high-risk users before lower-impact hygiene items.",
+  "control_areas": [
+    {
+      "area": "Identity and MFA",
+      "status": "Red",
+      "evidence_source": "Entra admin center / Secure Score recommended actions export",
+      "executive_note": "Admin MFA is partially complete; privileged accounts should be brought to phishing-resistant MFA first."
+    },
+    {
+      "area": "Email protection",
+      "status": "Amber",
+      "evidence_source": "Microsoft Defender portal policy review",
+      "executive_note": "Anti-phishing and safe attachment policies exist but enforcement scope should be confirmed."
+    },
+    {
+      "area": "Device compliance",
+      "status": "Amber",
+      "evidence_source": "Intune compliance dashboard screenshot",
+      "executive_note": "Most managed devices report compliance; unmanaged endpoints remain a reporting gap."
+    },
+    {
+      "area": "Audit and logging",
+      "status": "Green",
+      "evidence_source": "Purview audit configuration export",
+      "executive_note": "Audit logging is enabled and evidence can be attached to the monthly client pack."
+    }
+  ],
+  "completed_improvements": [
+    {
+      "action_completed": "Enabled security defaults for pilot group",
+      "score_impact": "+4%",
+      "risk_reduced": "Reduced likelihood of password-only sign-in compromise for pilot users",
+      "evidence_location": "Evidence pack / July / MFA pilot screenshot"
+    },
+    {
+      "action_completed": "Reviewed legacy authentication sign-ins",
+      "score_impact": "+3%",
+      "risk_reduced": "Identified legacy protocol usage before full block policy rollout",
+      "evidence_location": "Evidence pack / July / legacy-auth-export.csv"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "priority": 1,
+      "action": "Roll out phishing-resistant MFA for all administrator accounts",
+      "expected_impact": "High risk reduction for tenant takeover scenarios",
+      "owner": "MSP security lead",
+      "target_date": "2026-08-15",
+      "decision_needed": "Approve administrator rollout window and fallback process"
+    },
+    {
+      "priority": 2,
+      "action": "Confirm Defender for Office 365 anti-phishing policy scope",
+      "expected_impact": "Improves executive confidence in email protection coverage",
+      "owner": "Messaging administrator",
+      "target_date": "2026-08-22",
+      "decision_needed": "Confirm whether VIP/high-risk users need stricter policy"
+    },
+    {
+      "priority": 3,
+      "action": "Document unmanaged endpoint exception list",
+      "expected_impact": "Makes residual endpoint risk visible for QBR discussion",
+      "owner": "Client IT owner",
+      "target_date": "2026-08-31",
+      "decision_needed": "Decide whether remaining unmanaged devices should be enrolled or retired"
+    }
+  ],
+  "exceptions": [
+    {
+      "exception": "One legacy line-of-business app cannot yet use modern authentication",
+      "reason": "Vendor upgrade is pending",
+      "compensating_control": "Restricted network location and monitored sign-in alerts",
+      "owner": "Client application owner",
+      "review_date": "2026-09-30"
+    }
+  ]
+}

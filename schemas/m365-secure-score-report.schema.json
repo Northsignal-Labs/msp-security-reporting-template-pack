@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/schemas/m365-secure-score-report.schema.json",
+  "title": "M365 Secure Score Executive Report Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "client_name",
+    "reporting_period",
+    "prepared_by",
+    "secure_score_percent",
+    "points_achieved",
+    "points_available",
+    "overall_posture",
+    "top_recommendation"
+  ],
+  "properties": {
+    "client_name": {"type": "string", "minLength": 1},
+    "tenant_name": {"type": "string"},
+    "reporting_period": {"type": "string", "minLength": 4},
+    "prepared_by": {"type": "string", "minLength": 1},
+    "secure_score_percent": {"type": "number", "minimum": 0, "maximum": 100},
+    "previous_score_percent": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+    "points_achieved": {"type": "number", "minimum": 0},
+    "points_available": {"type": "number", "exclusiveMinimum": 0},
+    "overall_posture": {"type": "string", "enum": ["Green", "Amber", "Red"]},
+    "top_recommendation": {"type": "string", "minLength": 1},
+    "control_areas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["area", "status", "evidence_source", "executive_note"],
+        "properties": {
+          "area": {"type": "string"},
+          "status": {"type": "string", "enum": ["Green", "Amber", "Red"]},
+          "evidence_source": {"type": "string"},
+          "executive_note": {"type": "string"}
+        }
+      }
+    },
+    "completed_improvements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["action_completed", "risk_reduced"],
+        "properties": {
+          "action_completed": {"type": "string"},
+          "score_impact": {"type": ["string", "number"]},
+          "risk_reduced": {"type": "string"},
+          "evidence_location": {"type": "string"}
+        }
+      }
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["priority", "action", "expected_impact", "owner", "target_date", "decision_needed"],
+        "properties": {
+          "priority": {"type": "integer", "minimum": 1},
+          "action": {"type": "string"},
+          "expected_impact": {"type": "string"},
+          "owner": {"type": "string"},
+          "target_date": {"type": "string"},
+          "decision_needed": {"type": "string"}
+        }
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["exception", "reason", "owner", "review_date"],
+        "properties": {
+          "exception": {"type": "string"},
+          "reason": {"type": "string"},
+          "compensating_control": {"type": "string"},
+          "owner": {"type": "string"},
+          "review_date": {"type": "string"}
+        }
+      }
+    }
+  }
+}

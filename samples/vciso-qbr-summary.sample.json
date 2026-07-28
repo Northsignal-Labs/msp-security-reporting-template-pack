@@ -1,0 +1,138 @@
+{
+  "client_name": "Example Professional Services Ltd",
+  "quarter": "Q3 2026",
+  "meeting_date": "2026-07-24",
+  "prepared_by": "Example MSP security operations team",
+  "scope": "Quarterly executive security review for identity, endpoint, backup, patching, incident readiness, governance exceptions, and next-quarter actions.",
+  "executive_summary": "The strongest evidence this quarter is MFA coverage for privileged users, endpoint protection deployment, and current backup success reporting. The largest unresolved business risks are incomplete restore-test evidence, inconsistent patch exception ownership, and an undocumented decision path for accepting temporary remote-access exceptions. Recommended next-quarter priorities are a documented restore test, formal exception owner approval, and a short incident/tabletop decision exercise.",
+  "attendees": [
+    {
+      "role": "Managing director",
+      "decision_responsibility": "Approve or park business-risk decisions",
+      "notes": "Executive owner for risk acceptance and budget trade-offs"
+    },
+    {
+      "role": "Operations manager",
+      "decision_responsibility": "Own process changes and evidence follow-up",
+      "notes": "Coordinates internal owners for open actions"
+    },
+    {
+      "role": "MSP service lead",
+      "decision_responsibility": "Present evidence and recommended technical actions",
+      "notes": "Does not accept client business/legal/insurance risk"
+    }
+  ],
+  "scorecard": [
+    {
+      "area": "Identity and MFA",
+      "status": "green",
+      "evidence_date": "2026-07-20",
+      "business_impact": "Privileged account takeover exposure is reduced for in-scope accounts.",
+      "next_action": "Review remaining break-glass and service-account exceptions.",
+      "owner": "MSP service lead"
+    },
+    {
+      "area": "Endpoint and device security",
+      "status": "green",
+      "evidence_date": "2026-07-18",
+      "business_impact": "Most managed devices report active endpoint protection.",
+      "next_action": "Confirm two stale laptops are retired or re-enrolled.",
+      "owner": "IT coordinator"
+    },
+    {
+      "area": "Backup and recovery readiness",
+      "status": "amber",
+      "evidence_date": "2026-07-21",
+      "business_impact": "Backup jobs are visible, but recovery confidence is limited without a current restore-test record.",
+      "next_action": "Run and document a scoped restore test.",
+      "owner": "Infrastructure lead"
+    },
+    {
+      "area": "Patching and vulnerability exposure",
+      "status": "amber",
+      "evidence_date": "2026-07-19",
+      "business_impact": "Delayed high-priority patches need explicit exception ownership.",
+      "next_action": "Assign owners and target dates to remaining exceptions.",
+      "owner": "Operations manager"
+    },
+    {
+      "area": "Incident response readiness",
+      "status": "unknown",
+      "evidence_date": "2026-04-15",
+      "business_impact": "Escalation roles have not been tested this quarter.",
+      "next_action": "Run a short tabletop decision exercise.",
+      "owner": "Managing director"
+    }
+  ],
+  "top_risks": [
+    {
+      "risk": "No current restore-test evidence for business-critical file restore",
+      "status": "amber",
+      "evidence": "Backup success exports exist; restore-test note is older than one quarter.",
+      "owner": "Infrastructure lead",
+      "decision_needed": "Approve restore-test window and systems in scope.",
+      "review_trigger": "Before next QBR or after backup platform change"
+    },
+    {
+      "risk": "Patch exceptions lack business-owner signoff",
+      "status": "amber",
+      "evidence": "Patch report lists deferred vendor application updates without owners.",
+      "owner": "Operations manager",
+      "decision_needed": "Approve owners and review dates for each exception.",
+      "review_trigger": "Monthly until exceptions close"
+    },
+    {
+      "risk": "Incident escalation decision path is not rehearsed",
+      "status": "unknown",
+      "evidence": "Incident plan exists; latest tabletop is outside the current quarter.",
+      "owner": "Managing director",
+      "decision_needed": "Schedule tabletop and confirm escalation roles.",
+      "review_trigger": "After tabletop or material business-system change"
+    }
+  ],
+  "decisions_requested": [
+    {
+      "decision": "Approve a scoped restore test for the finance file share and one SaaS export recovery path.",
+      "decision_type": "approve",
+      "reason": "Current backup reports prove job status but not restore confidence.",
+      "options": "Option A: test this month; Option B: test next maintenance window with explicit risk note.",
+      "decision_owner": "Managing director"
+    },
+    {
+      "decision": "Assign owners and expiry dates to patch exceptions that cannot close this month.",
+      "decision_type": "needs_review",
+      "reason": "The MSP should not silently carry unresolved business exceptions without owner visibility.",
+      "options": "Approve owner/date mapping, park specific items with review trigger, or escalate to vendor owner.",
+      "decision_owner": "Operations manager"
+    }
+  ],
+  "action_register": [
+    {
+      "priority": 1,
+      "action": "Run and document a scoped restore test with pass/fail notes and lessons learned.",
+      "risk_reduced": "Recovery uncertainty for business-critical data",
+      "effort": "M",
+      "owner": "Infrastructure lead",
+      "due_date": "2026-08-15",
+      "status": "open"
+    },
+    {
+      "priority": 2,
+      "action": "Create a patch-exception owner/date register for deferred vendor application updates.",
+      "risk_reduced": "Unowned vulnerability exposure",
+      "effort": "S",
+      "owner": "Operations manager",
+      "due_date": "2026-08-08",
+      "status": "open"
+    },
+    {
+      "priority": 3,
+      "action": "Run a 30-minute incident escalation tabletop covering ransomware triage and client communication roles.",
+      "risk_reduced": "Unclear escalation and decision ownership during an incident",
+      "effort": "S",
+      "owner": "Managing director",
+      "due_date": "2026-09-05",
+      "status": "proposed"
+    }
+  ]
+}

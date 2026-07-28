@@ -1,0 +1,81 @@
+name: Template or generator request
+about: Public no-spend demand signal for Northsignal Labs MSP/security templates
+labels: [template-request, demand-signal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping validate whether this no-spend template pack is useful.
+
+        Do not include client names, private security details, screenshots, logs, credentials, personal contact details, or confidential information. Northsignal Labs is a small independent automation lab; these assets are operational templates only and are not legal, insurance, compliance, audit, certification, Microsoft-affiliation, or professional-services advice.
+  - type: dropdown
+    id: asset
+    attributes:
+      label: Which asset would help you most?
+      options:
+        - MSP monthly security report template
+        - NIS2 readiness checklist
+        - M365 Secure Score executive report generator
+        - Cyber-insurance evidence checklist / gap register
+        - vCISO QBR agenda template
+        - Another MSP/security reporting template
+    validations:
+      required: true
+  - type: dropdown
+    id: role-context
+    attributes:
+      label: What best describes the use case?
+      options:
+        - MSP client reporting
+        - Internal IT/security reporting
+        - QBR or executive review prep
+        - Audit/evidence preparation support
+        - Tooling/generator evaluation
+        - Other operational workflow
+    validations:
+      required: true
+  - type: dropdown
+    id: request-intent
+    attributes:
+      label: What kind of improvement would create the most value?
+      description: Pick the generic improvement type only; do not name a client, tenant, prospect, deal, employer, or contact.
+      options:
+        - New template for the same MSP/security reporting workflow
+        - More finished example outputs
+        - Local generator or import/export support
+        - Clearer executive summary or one-page output
+        - Checklist/evidence fields for an adjacent workflow
+        - Documentation/runbook guidance for MSP operators
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: operational-urgency
+    attributes:
+      label: How soon would this help with a real operational workflow?
+      description: Broad urgency only; do not include client names, deal terms, budgets, or private deadlines.
+      options:
+        - This week
+        - This month
+        - This quarter
+        - Later / exploratory
+        - No current operational need
+    validations:
+      required: true
+  - type: textarea
+    id: requested-improvement
+    attributes:
+      label: What would make this more useful?
+      description: Keep this generic. Do not share client-specific, private, regulated, or confidential details.
+      placeholder: "Example: add an executive one-page summary, add a CSV input example, add a backup/restore evidence table, or add a printable checklist."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety-confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included client names, private security details, credentials, logs, screenshots, personal contact details, or confidential information.
+          required: true
+        - label: I understand this is operational template feedback only, not a request for legal, insurance, compliance, audit, certification, Microsoft-affiliation, or professional-services advice.
+          required: true

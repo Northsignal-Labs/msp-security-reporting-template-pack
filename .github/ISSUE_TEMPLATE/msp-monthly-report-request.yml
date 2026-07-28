@@ -1,0 +1,54 @@
+name: MSP monthly report request
+about: Public-safe request signal for the MSP monthly security report workflow
+labels: [template-request, demand-signal, asset:msp-monthly-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this asset-specific template when your request is about the MSP monthly security report workflow. The asset label lets Northsignal Labs count workflow-level demand in aggregate without reading issue bodies or collecting personal/client data.
+
+        Do not include client names, private security details, screenshots, logs, credentials, personal contact details, contract terms, quote/invoice requests, payment data, or confidential information. Northsignal Labs is a small independent automation lab; this is operational template feedback only, not legal, insurance, compliance, audit, certification, Microsoft-affiliation, or professional-services advice.
+  - type: dropdown
+    id: request-intent
+    attributes:
+      label: What improvement would help the monthly report workflow most?
+      description: Choose a generic improvement type only; do not identify a client, tenant, prospect, employer, deal, or contact.
+      options:
+        - More finished monthly report example outputs
+        - Local generator input/import support
+        - Clearer executive summary or one-page output
+        - Additional recurring metric or evidence section
+        - Adjacent MSP reporting template for the same monthly workflow
+        - Documentation/runbook guidance for MSP operators
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: operational-urgency
+    attributes:
+      label: How soon would this help with a real operational workflow?
+      options:
+        - This week
+        - This month
+        - This quarter
+        - Later / exploratory
+        - No current operational need
+    validations:
+      required: true
+  - type: textarea
+    id: requested-improvement
+    attributes:
+      label: What would make the MSP monthly report more useful?
+      description: Keep this generic and public-safe. Do not share client-specific, private, regulated, or confidential details.
+      placeholder: "Example: add a CSV input example, add a one-page executive summary, or add a recurring vulnerability/backup status section."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety-confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included client names, private security details, credentials, logs, screenshots, personal contact details, contract terms, payment data, or confidential information.
+          required: true
+        - label: I understand this is public operational template feedback only, not a quote, invoice, purchase, sales contact, or request for regulated/professional advice.
+          required: true

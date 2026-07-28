@@ -1,0 +1,53 @@
+name: M365 Secure Score request
+about: Public-safe request signal for the M365 Secure Score executive reporting workflow
+labels: [template-request, demand-signal, asset:m365-secure-score]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this asset-specific template when your request is about the M365 Secure Score executive report/generator workflow. The asset label lets Northsignal Labs count workflow-level demand in aggregate without reading issue bodies or collecting personal/client data.
+
+        Do not include tenant names, client names, screenshots, logs, credentials, private security details, personal contact details, contract terms, quote/invoice requests, payment data, or confidential information. These assets are operational reporting aids only, not Microsoft-affiliated guidance, compliance advice, audit advice, certification, or professional-services advice.
+  - type: dropdown
+    id: request-intent
+    attributes:
+      label: What improvement would help M365 Secure Score reporting most?
+      description: Choose a generic improvement type only; do not identify a tenant, client, prospect, employer, deal, or contact.
+      options:
+        - More finished M365 executive report examples
+        - Local generator input/import support
+        - Clearer executive summary or one-page output
+        - Additional control/category explanation fields
+        - Documentation/runbook guidance for MSP operators
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: operational-urgency
+    attributes:
+      label: How soon would this help with a real operational workflow?
+      options:
+        - This week
+        - This month
+        - This quarter
+        - Later / exploratory
+        - No current operational need
+    validations:
+      required: true
+  - type: textarea
+    id: requested-improvement
+    attributes:
+      label: What would make the M365 Secure Score report more useful?
+      description: Keep this generic and public-safe. Do not share tenant-specific, client-specific, private, regulated, or confidential details.
+      placeholder: "Example: add a CSV import example, add action-priority grouping, or add a one-page executive summary."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety-confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included tenant names, client names, private security details, credentials, logs, screenshots, personal contact details, contract terms, payment data, or confidential information.
+          required: true
+        - label: I understand this is public operational reporting feedback only, not a quote, invoice, purchase, sales contact, Microsoft-affiliated guidance, or regulated/professional advice.
+          required: true
