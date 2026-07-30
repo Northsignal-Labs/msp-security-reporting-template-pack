@@ -1,14 +1,14 @@
 # Request roadmap for first public validation
 
-Status: local static release file prepared for a future approved no-spend public channel. No account, upload, public posting, analytics, form, contact capture, payment workflow, quote/invoice path, sales workflow, or spend is created by this file.
+Status: live public request-roadmap guide on the approved no-spend Northsignal Labs GitHub Pages channel. No public posting, analytics, form, contact capture, payment workflow, quote/invoice path, sales workflow, or spend is created by this file.
 
 ## Why this exists
 
 The fastest post-launch revenue-learning path is not more internal asset polish. It is making the next useful request easy to express publicly and safely, then counting only aggregate `template-request` and `commercial-fit` label totals alongside stars, forks, watchers, and open issues.
 
-Use this roadmap after an approved public launch to steer visitors toward public-safe requests that reveal which workflow deserves the next no-spend build cycle.
+Use this roadmap on the approved public launch channel to steer visitors toward public-safe requests that reveal which workflow deserves the next no-spend build cycle.
 
-## How to signal interest after launch
+## How to signal interest safely
 
 - Open `.github/ISSUE_TEMPLATE/template-request.yml` for a generic template/generator request when the workflow is unclear.
 - Prefer an asset-specific request template when the workflow is known so GitHub can apply the matching `asset:*` label automatically for aggregate workflow scoring: `.github/ISSUE_TEMPLATE/msp-monthly-report-request.yml`, `.github/ISSUE_TEMPLATE/nis2-readiness-request.yml`, `.github/ISSUE_TEMPLATE/m365-secure-score-request.yml`, `.github/ISSUE_TEMPLATE/cyber-insurance-evidence-request.yml`, or `.github/ISSUE_TEMPLATE/vciso-qbr-request.yml`.

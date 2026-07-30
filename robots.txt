@@ -1,6 +1,5 @@
-# Northsignal Labs static release placeholder
-# Safe for a future approved no-spend static publishing route.
-# Replace the sitemap host only after the final public URL is approved.
+# Northsignal Labs public static release.
+# Approved no-spend GitHub Pages route; no analytics, forms, payment links, cookies, or client-data collection.
 
 User-agent: *
 Allow: /

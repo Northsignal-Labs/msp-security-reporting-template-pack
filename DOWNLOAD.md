@@ -1,6 +1,6 @@
 # Download and use the Northsignal Labs MSP template pack
 
-Status: local release file prepared for a future approved no-spend public channel. `download.html` provides the browser-friendly version of this guide. No account, upload, payment link, form, analytics, contact capture, or public posting is created by this file.
+Status: live no-spend public guide on the approved Northsignal Labs GitHub Pages channel. `download.html` provides the browser-friendly version of this guide. No payment link, form, analytics, contact capture, private inbox, quote/invoice path, sales workflow, or spend is created by this file.
 
 ## Fastest value path
 
@@ -8,11 +8,11 @@ Status: local release file prepared for a future approved no-spend public channe
 2. **Start with the highest-intent asset:** `msp-monthly-security-report-template.html` explains the monthly reporting workflow; `assets/msp-monthly-security-report-template.md` is the copyable Markdown template.
 3. **Use the generator quickstart:** `generator-quickstart.html` gives a one-command proof path for all five local JSON-to-Markdown/HTML generators.
 4. **Preview sample outputs before running scripts:** `sample-outputs.html` gives browser-friendly generated demos, and `SAMPLE-OUTPUTS.md` links the Markdown/HTML files for the five generator-backed workflows.
-5. **Choose a safe request path after approved launch:** `request-signal.html` explains which template-request or commercial-fit category to use and what sensitive/contact/payment data must not be shared.
+5. **Choose a safe request path:** `request-signal.html` explains which live public template-request or commercial-fit category to use and what sensitive/contact/payment data must not be shared.
 6. **Check the request roadmap:** `REQUEST-ROADMAP.md` shows which next templates/generator improvements are worth requesting publicly and how each request should be classified for aggregate validation.
 7. **Use local generators only if useful:** the `tools/` scripts turn the sample JSON files into Markdown/HTML outputs without network access or paid dependencies.
 8. **Keep the MIT license with copies:** `LICENSE` grants reuse under Northsignal Labs attribution; the operational-use disclaimers in `README.md` and the asset pages still apply.
-9. **After an approved GitHub release only:** use the structured issue templates, not email/forms, for public-safe template requests or non-binding commercial-fit signal.
+9. **Use structured public issue templates only:** do not use email/forms/private inboxes for template requests or non-binding commercial-fit signal.
 
 ## What to download or open first
 
@@ -28,7 +28,7 @@ For quick proof-of-value previews, open `generator-quickstart.html` for the one-
 
 ## Public validation hooks after launch
 
-If this package is later published through an approved non-personal GitHub/static channel, the measurable no-spend signals to watch are:
+Because this package is live on the approved non-personal GitHub/static channel, the measurable no-spend signals to watch are:
 
 - aggregate stars, forks, watchers, and open issue counts;
 - public-safe template requests via `.github/ISSUE_TEMPLATE/template-request.yml`;
