@@ -66,7 +66,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `05f09cdad7c66427e8184bdfa07449c063ae44b4d8a7f552512fb8dae23c0f11` | 6225 | `generated/vciso-qbr-summary.sample.html` |
 | `536a6ffed37ff1f92160dfc4d043590a43c463eac43c1243af9df0dfd5dd852e` | 5620 | `generated/vciso-qbr-summary.sample.md` |
 | `65f1b90fd6f4a4db90247d3db914ab6b5f4cbcb8744abb44315a20bcb128ca11` | 7505 | `generator-quickstart.html` |
-| `c491f15be62ac83654b08befb15ed0b048c08cfd3cab03524371c2340f600fcc` | 11135 | `index.html` |
+| `af8a37cf4a2bc42b5a5f488c13b7fcec138a757989f7645655a042455f77f019` | 12721 | `index.html` |
 | `6f3f6a67222af5ef8ea958206bec840dd831f73380500189b149b97e5a528c19` | 3645 | `llms.txt` |
 | `c0d46cf72820af16e4981cc8684e338be4f1eafb9db91ed7f07d66d1669466c6` | 11527 | `m365-secure-score-executive-report-template.html` |
 | `17c77435bd27c1778a3679053a8d95154fb78d45da9eacb196af02379c013682` | 993 | `manual-aggregate-counters.example.json` |
