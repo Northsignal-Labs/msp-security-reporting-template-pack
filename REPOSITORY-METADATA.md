@@ -1,10 +1,10 @@
 # Northsignal Labs repository metadata handoff
 
-Status: local-only launch metadata; not published; no account, upload, contact, analytics, payment workflow, or spend.
+Status: live approved no-spend GitHub Pages/repository metadata; no contact capture, analytics, payment workflow, or spend.
 
 ## Purpose
 
-This page gives a future reviewer copy/paste-safe public repository metadata for the MSP Security Reporting Template Pack after a concrete no-spend, non-personal public channel and HTTPS URL are approved. It reduces approval-to-launch delay and keeps the first public impression focused on measurable aggregate demand signals: stars/forks/watchers/open issues, labeled template requests, and non-binding labeled commercial-fit issues. The same handoff is available in machine-readable form as `REPOSITORY-METADATA.json` so a reviewer can compare repository settings without retyping free-form copy.
+This page gives a reviewer copy/paste-safe public repository metadata for the MSP Security Reporting Template Pack on the approved no-spend, non-personal GitHub Pages route. It reduces approval-to-launch delay and keeps the first public impression focused on measurable aggregate demand signals: stars/forks/watchers/open issues, labeled template requests, and non-binding labeled commercial-fit issues. The same handoff is available in machine-readable form as `REPOSITORY-METADATA.json` so a reviewer can compare repository settings without retyping free-form copy.
 
 ## Recommended repository settings
 
@@ -21,7 +21,7 @@ This page gives a future reviewer copy/paste-safe public repository metadata for
 
 ## Machine-readable metadata
 
-Use `REPOSITORY-METADATA.json` as the copy/paste-safe source of truth for the display name, short description, topics, pinned launch copy, issue/label/Pages settings, aggregate first-validation metrics, and forbidden pre-approval workflows. It is intentionally local/static metadata only: it does not approve a public URL, create an account, call GitHub, upload files, add analytics/forms/contact capture, create payment/KYC/quote/invoice/sales workflows, or spend money.
+Use `REPOSITORY-METADATA.json` as the copy/paste-safe source of truth for the display name, short description, topics, pinned launch copy, issue/label/Pages settings, aggregate first-validation metrics, and forbidden pre-approval workflows. It is intentionally static metadata only: it does not create accounts, call paid APIs, add analytics/forms/contact capture, create payment/KYC/quote/invoice/sales workflows, or spend money.
 
 ## Pinned launch copy
 
