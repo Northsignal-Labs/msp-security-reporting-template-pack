@@ -46,16 +46,4 @@ Do not include client names, private security details, credentials, vulnerabilit
 
 ## Current publication state
 
-The package is live on the approved no-spend GitHub Pages route:
-
-- Public site: https://northsignal-labs.github.io/msp-security-reporting-template-pack/
-- Public repository: https://github.com/Northsignal-Labs/msp-security-reporting-template-pack
-- Sitemap: https://northsignal-labs.github.io/msp-security-reporting-template-pack/sitemap.xml
-
-## High-intent discovery queries this pack answers
-
-- Free MSP monthly security report template with client-ready executive summary and action register.
-- NIS2 readiness checklist for MSP client evidence scoping and board-friendly gap summaries.
-- M365 Secure Score executive report template with local sample generator and no Microsoft-affiliation claim.
-- Cyber-insurance evidence checklist for organizing controls, owners, evidence links, and gaps before renewal discussions.
-- vCISO QBR agenda template for quarterly client security reviews, risk decisions, and follow-up actions.
+The package is local-only until a concrete approved non-personal no-spend HTTPS public URL/account target is supplied and release gates pass after URL cutover. `robots.txt` and `sitemap.xml` intentionally keep the placeholder host until then.

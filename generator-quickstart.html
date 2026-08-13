@@ -8,9 +8,6 @@
   <meta property="og:title" content="Northsignal Labs generator quickstart" />
   <meta property="og:description" content="One-command local proof run for all five generator-backed MSP reporting workflows, with direct links to schemas, sample inputs, generated previews, and safe request paths." />
   <meta name="twitter:card" content="summary" />
-  <link rel="canonical" href="https://northsignal-labs.github.io/msp-security-reporting-template-pack/generator-quickstart.html" />
-  <meta property="og:url" content="https://northsignal-labs.github.io/msp-security-reporting-template-pack/generator-quickstart.html" />
-  <meta name="referrer" content="no-referrer" />
   <style>
     body{margin:0;background:#080b12;color:#edf3ff;font-family:Inter,system-ui,sans-serif;line-height:1.5}
     header,main{padding:28px clamp(18px,4vw,44px)}
@@ -21,7 +18,7 @@
 <body>
 <header>
   <h1>Generator quickstart</h1>
-  <p class="muted">Prove the full generator-backed pack locally before deciding whether to fork, copy, run, or request the next workflow from the live public pack.</p>
+  <p class="muted">Prove the full generator-backed pack locally before deciding whether to fork, copy, run, or request the next workflow after an approved public launch.</p>
 </header>
 <main>
   <section class="card" style="margin-bottom:18px;border-color:rgba(57,217,138,.35);background:linear-gradient(135deg,rgba(57,217,138,.12),rgba(16,23,37,.96))">
@@ -30,11 +27,11 @@
     <p class="muted">From the repository root, run the filesystem-only sample runner. It uses synthetic JSON fixtures and writes local Markdown/HTML outputs only; it does not use a network, accounts, analytics, forms, contact capture, payment links, quote/invoice workflows, or paid tools.</p>
     <pre><code>python3 tools/run_all_sample_generators.py
 python3 tools/run_all_sample_generators.py --check-only</code></pre>
-    <p class="muted">Expected result: five workflows checked, ten non-empty generated outputs, and zero errors. This page helps visitors evaluate generator value before opening a public-safe <code>template-request</code> or non-binding <code>commercial-fit</code> signal.</p>
+    <p class="muted">Expected result: five workflows checked, ten non-empty generated outputs, and zero errors. If this pack is later published on an approved non-personal channel, this page helps visitors evaluate generator value before opening a public-safe <code>template-request</code> or non-binding <code>commercial-fit</code> signal.</p>
     <ul>
       <li><a href="download.html">Use the browser-friendly start/download guide</a></li>
       <li><a href="sample-outputs.html">Preview generated sample outputs</a></li>
-      <li><a href="request-signal.html">Choose a safe request or commercial-fit signal path on the approved public channel</a></li>
+      <li><a href="request-signal.html">Choose a safe request or commercial-fit signal path after approved launch</a></li>
       <li><a href="README.md">Return to the full repository README</a></li>
     </ul>
   </section>
@@ -45,7 +42,7 @@ python3 tools/run_all_sample_generators.py --check-only</code></pre>
     <article class="card"><span class="pill">M365 posture</span><h2>M365 Secure Score report</h2><ul><li><a href="tools/m365_secure_score_report_generator.py">Generator</a></li><li><a href="schemas/m365-secure-score-report.schema.json">Schema</a> + <a href="samples/m365-secure-score-report.sample.json">sample JSON</a></li><li><a href="generated/m365-secure-score-report.sample.html">HTML sample</a> + <a href="generated/m365-secure-score-report.sample.md">Markdown sample</a></li><li><a href="m365-secure-score-executive-report-template.html">Landing page</a></li></ul></article>
     <article class="card"><span class="pill">Insurance evidence</span><h2>Cyber-insurance gap register</h2><ul><li><a href="tools/cyber_insurance_gap_register_generator.py">Generator</a></li><li><a href="schemas/cyber-insurance-gap-register.schema.json">Schema</a> + <a href="samples/cyber-insurance-gap-register.sample.json">sample JSON</a></li><li><a href="generated/cyber-insurance-gap-register.sample.html">HTML sample</a> + <a href="generated/cyber-insurance-gap-register.sample.md">Markdown sample</a></li><li><a href="cyber-insurance-evidence-checklist.html">Landing page</a></li></ul></article>
     <article class="card"><span class="pill">Governance/QBR</span><h2>vCISO QBR summary</h2><ul><li><a href="tools/vciso_qbr_summary_generator.py">Generator</a></li><li><a href="schemas/vciso-qbr-summary.schema.json">Schema</a> + <a href="samples/vciso-qbr-summary.sample.json">sample JSON</a></li><li><a href="generated/vciso-qbr-summary.sample.html">HTML sample</a> + <a href="generated/vciso-qbr-summary.sample.md">Markdown sample</a></li><li><a href="vciso-qbr-agenda-template.html">Landing page</a></li></ul></article>
-    <article class="card"><span class="pill">Live public signal</span><h2>Classify what users need next</h2><p class="muted">Count only aggregate public stars, forks, watchers, open issues, and labeled template-request/commercial-fit issues. Use <a href="REQUEST-ROADMAP.md">REQUEST-ROADMAP.md</a> and <a href="request-signal.html">request-signal.html</a> to map demand to the highest-ROI next workflow.</p><ul><li><a href=".github/ISSUE_TEMPLATE/template-request.yml">Template-request workflow</a></li><li><a href=".github/ISSUE_TEMPLATE/commercial-fit-signal.yml">Commercial-fit workflow</a></li></ul></article>
+    <article class="card"><span class="pill">Approved-launch signal</span><h2>Classify what users need next</h2><p class="muted">After an approved launch, count only aggregate public stars, forks, watchers, open issues, and labeled template-request/commercial-fit issues. Use <a href="REQUEST-ROADMAP.md">REQUEST-ROADMAP.md</a> and <a href="request-signal.html">request-signal.html</a> to map demand to the highest-ROI next workflow.</p><ul><li><a href=".github/ISSUE_TEMPLATE/template-request.yml">Template-request workflow</a></li><li><a href=".github/ISSUE_TEMPLATE/commercial-fit-signal.yml">Commercial-fit workflow</a></li></ul></article>
   </section>
 
   <section class="card" style="margin-top:18px">

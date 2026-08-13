@@ -1,12 +1,12 @@
 {
   "project": "Northsignal Labs MSP Security Reporting Template Pack",
-  "status": "live_approved_no_spend_github_pages_metadata",
-  "purpose": "Machine-readable repository metadata for the live approved no-spend, non-personal GitHub Pages/repository route. This file reduces copy/paste errors and does not create accounts, collect data, start financial workflows, or spend money.",
+  "status": "local_only_post_approval_metadata_handoff_not_published",
+  "purpose": "Machine-readable repository metadata for a future approved no-spend, non-personal public channel. This file reduces approval-to-launch copy/paste errors and does not create accounts, upload, publish, collect data, start financial workflows, or spend money.",
   "repository": {
     "display_name": "Northsignal Labs MSP Security Reporting Template Pack",
     "short_description": "Free MSP/client security reporting templates and local generators for monthly reports, NIS2 evidence scoping, M365 Secure Score summaries, cyber-insurance evidence, and vCISO QBRs.",
-    "homepage_url_policy": "Use the approved HTTPS public_base_url: https://northsignal-labs.github.io/msp-security-reporting-template-pack/ ; require HTTPS and do not use northsignal-labs.local, localhost, personal domains, paid domains, forms, analytics, payment, contact-capture, or placeholder URLs.",
-    "visibility_policy": "Public on the approved no-spend, non-personal Northsignal Labs repository route; keep issues structured and avoid discussions/wiki/projects until separate approval.",
+    "homepage_url_policy": "Set only to the reviewer-approved HTTPS public_base_url after APPROVAL-HANDOFF-FIELDS.json validates and local URL cutover/final gates pass; do not use northsignal-labs.local, localhost, personal domains, paid domains, forms, analytics, payment, contact-capture, or placeholder URLs.",
+    "visibility_policy": "Public only after concrete no-spend, non-personal channel/account/repository fields are approved and final local gates pass.",
     "license": "MIT License under Northsignal Labs attribution",
     "topics": [
       "msp",

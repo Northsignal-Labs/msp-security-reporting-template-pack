@@ -1,0 +1,30 @@
+{
+  "aggregate_signal": {
+    "commercial_fit_signals": 0,
+    "forks": 0,
+    "open_issues": 0,
+    "stars": 1,
+    "template_requests": 0,
+    "watchers": 1
+  },
+  "asset_label_counts": {
+    "cyber_insurance_evidence": 0,
+    "m365_secure_score_report": 0,
+    "msp_monthly_security_report": 0,
+    "nis2_readiness_checklist": 0,
+    "vciso_qbr_agenda": 0
+  },
+  "collection_state": "live_aggregate_snapshot_written",
+  "generated_at": "2026-07-31T15:01:23Z",
+  "guardrail": "aggregate public counters only; no issue bodies, comments, authors, emails, IPs, analytics, forms, cookies, contact capture, payment/KYC, account creation, posting, or spend",
+  "mode": "live_public_api",
+  "next_decision_hint": "No/weak signal: after launch, improve distribution metadata/snippets before building payment or payout workflows.",
+  "project": "Northsignal Labs MSP Security Reporting Template Pack",
+  "source": "https://api.github.com/repos/northsignal-labs/msp-security-reporting-template-pack",
+  "target": {
+    "owner": "northsignal-labs",
+    "platform": "github",
+    "public_base_url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/",
+    "repo": "msp-security-reporting-template-pack"
+  }
+}

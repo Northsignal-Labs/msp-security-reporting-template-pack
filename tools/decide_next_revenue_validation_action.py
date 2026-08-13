@@ -145,10 +145,10 @@ def build_decision(snapshot: dict[str, Any], asset_scores: dict[str, int]) -> di
         state = "weak_or_no_signal_prioritize_distribution_metadata"
         recommendation = "Weak/no signal: do not create payment infrastructure or more templates; improve discovery/distribution metadata first."
         fastest_money_path = (
-            "After approved launch, use the existing public-safe message bank for at most one relevant no-spam share and improve snippets/metadata; "
-            "wait for aggregate stars/forks/issues/template requests before monetization work."
+            "After approved launch and one concrete safe venue/manual-post approval, use the existing public-safe message bank for at most one relevant no-spam share; "
+            "otherwise limit work to no-spend local snippets/metadata. Wait for aggregate stars/forks/issues/template requests before monetization work."
         )
-        next_action = "Improve launch snippets/search/social metadata or channel-specific README wording before building new assets."
+        next_action = "Improve launch snippets/search/social metadata or channel-specific README wording before building new assets; do not post externally until one venue/manual-post path is approved."
 
     return {
         "project": "Northsignal Labs MSP Security Reporting Template Pack",

@@ -1,6 +1,6 @@
 # First 7-day validation plan — Northsignal Labs MSP Security Reporting Template Pack
 
-Status: post-approval only. This plan is local-only until the reviewer supplies a concrete approved no-spend public URL/account target and the release gates pass after URL cutover.
+Status: live public validation. GitHub Pages is already live at `https://northsignal-labs.github.io/msp-security-reporting-template-pack/`; the remaining high-ROI blocker is one concrete approved no-spend external/manual post path, followed by 24–48h aggregate-only measurement.
 
 ## Purpose
 
@@ -15,23 +15,20 @@ This plan turns the first approved public week into measurable demand validation
 - Do not invent customers, testimonials, founder identity, certifications, partnerships, revenue, or professional-service claims.
 - Treat template-request and commercial-fit issues as public, non-binding aggregate signal only.
 
-## Day 0: launch preflight after approval
+## Day 0: launch preflight after approval — completed for the live GitHub Pages route
 
-1. Complete `APPROVAL-HANDOFF-FIELDS.json` with the approved channel, concrete HTTPS public URL ending in `/`, account/repository display name, metadata constraints, no-spend/no-financial/no-data-collection confirmations, claims/identity approval, and final reviewer.
-2. Run `python3 tools/validate_approval_handoff.py` and require `ready_for_reviewer_cutover` before any host replacement.
-3. Run `python3 tools/perform_public_url_cutover.py` as a dry run, then `python3 tools/perform_public_url_cutover.py --apply` only if the dry run changes only approved public URL references in `sitemap.xml`, `robots.txt`, and generator JSON Schema `$id` values.
-4. Rerun the final gate sequence: approval validation, GitHub labels/workflow validation if applicable, pre-publication check, staging, localhost smoke test via telemetry, staged review, ZIP packaging, launch-packet sync, and bundle validation.
-5. Confirm the fresh `GO-LIVE-PACKAGE.json` file count, byte size, SHA-256, and ZIP verification errors=0 before upload.
-6. For GitHub, create or verify the exact labels in `.github/labels.yml` before interpreting request/commercial-fit counts.
+1. Completed: `APPROVAL-HANDOFF-FIELDS.json` contains the approved GitHub Pages target and guardrail confirmations.
+2. Completed: public URL smoke tests have passed against the live HTTPS Pages URL.
+3. Completed: aggregate-only GitHub signal collection is available through `tools/collect_public_signal_snapshot.py`.
+4. Still open: the prepared visitor-copy improvement is local-only until RP/reviewer pushes commit `f840c22` or restores approved non-personal repository write access.
+5. Still open: active validation needs exactly one approved external/manual post path in `EXTERNAL-DISTRIBUTION-VENUE-APPROVAL-REQUEST.md`; do not post elsewhere or retry blocked venues without that concrete approval.
+6. For GitHub signal interpretation, continue using aggregate counts only from stars/forks/watchers/open issues and labeled `template-request` / `commercial-fit` issues.
 
-## Day 1: publish and baseline
+## Day 1: publish and baseline — completed
 
-- Publish only the verified static package through the approved no-spend channel.
-- Fill repository/about metadata from `REPOSITORY-METADATA.md`.
-- Run `python3 tools/smoke_test_public_url.py` after the reviewer-controlled upload so the approved HTTPS URL is checked for allowlisted public paths, placeholder leakage, forms, analytics, payment, and contact-capture risk before any signal is interpreted.
-- Confirm these public paths load: `index.html`, `README.md`, `DOWNLOAD.md`, `msp-monthly-security-report-template.html`, `.github/ISSUE_TEMPLATE/template-request.yml`, `.github/ISSUE_TEMPLATE/commercial-fit-signal.yml`, `LICENSE`, `SECURITY.md`, and `CONTRIBUTING.md`.
-- Record a baseline aggregate snapshot with `tools/collect_public_signal_snapshot.py` for GitHub or guarded manual aggregate mode for an approved equivalent channel.
-- Run `tools/decide_next_revenue_validation_action.py` and keep the decision even if all counters are zero.
+- Public GitHub Pages route is live and has passed the public URL smoke test.
+- Baseline aggregate snapshot has been recorded and currently remains zero.
+- `tools/decide_next_revenue_validation_action.py` keeps the current state as `weak_or_no_signal_prioritize_distribution_metadata`, which means distribution/positioning validation is higher ROI than more templates or payment setup.
 
 ## Days 2–3: passive signal check
 
@@ -39,9 +36,9 @@ This plan turns the first approved public week into measurable demand validation
 - Do not inspect or store issue bodies, usernames, emails, client names, logs, screenshots, IPs, referrers, or comments.
 - If there is no signal, do not build more assets yet; improve distribution metadata or one approved public-safe resource description instead.
 
-## Days 4–5: one careful free-channel share only if appropriate
+## Days 4–5: one careful free-channel share only after concrete dashboard approval
 
-Only if the approved public page is live and the venue rules clearly allow resource sharing:
+Only if the approved public page is live, the venue rules clearly allow resource sharing, and `external-distribution-venue-access` has a completed approval/change note naming one concrete venue/account/manual-post path:
 
 - Use one transparent snippet from `DISTRIBUTION-MESSAGE-BANK.md`.
 - Share in one directly relevant, non-personal, non-spam venue.

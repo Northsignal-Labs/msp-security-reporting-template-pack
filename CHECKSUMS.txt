@@ -29,7 +29,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `6f12479cb1891cce71d8b9f2996f2a2d08725c94003ee02ce1b84466b27ba5d9` | 7454 | `DISTRIBUTION-MESSAGE-BANK.md` |
 | `91c5fc8300c557b742165d780f32ffebe81573a6299740b7984e9186f31a9b4f` | 5375 | `DISTRIBUTION-READINESS-SCOREBOARD.md` |
 | `401ecb6e2f099f674c2ac511248bd057e9155d1e2c9d606471c06b2d08f133f0` | 4987 | `DOWNLOAD.md` |
-| `0ebafbfab275d67b03738be86eb1b7935dc8f4e7ca48552840ec778bc9f9d085` | 6897 | `FIRST-7-DAY-VALIDATION-PLAN.md` |
+| `2c9cdf74b5dd0b868165c832a388d21230759ac2a02da2a42fdde3643b4854fd` | 6372 | `FIRST-7-DAY-VALIDATION-PLAN.md` |
 | `a3fd499a8022999acbecc4dcf1388c115f9938d6f6acc01fe54148407f891552` | 6447 | `GITHUB-LABEL-SETUP.md` |
 | `ef680b8fc67f84679e73203cb9d5b470088bf694571b2e3a45bbaa6c8b9601f9` | 4497 | `GITHUB-PAGES-SETUP.md` |
 | `618abae4c1a6f700c228ea4cffee323e99b29d808eeacfa808dc7431b15230df` | 1073 | `LICENSE` |
@@ -66,7 +66,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `05f09cdad7c66427e8184bdfa07449c063ae44b4d8a7f552512fb8dae23c0f11` | 6225 | `generated/vciso-qbr-summary.sample.html` |
 | `536a6ffed37ff1f92160dfc4d043590a43c463eac43c1243af9df0dfd5dd852e` | 5620 | `generated/vciso-qbr-summary.sample.md` |
 | `65f1b90fd6f4a4db90247d3db914ab6b5f4cbcb8744abb44315a20bcb128ca11` | 7505 | `generator-quickstart.html` |
-| `af8a37cf4a2bc42b5a5f488c13b7fcec138a757989f7645655a042455f77f019` | 12721 | `index.html` |
+| `c491f15be62ac83654b08befb15ed0b048c08cfd3cab03524371c2340f600fcc` | 11135 | `index.html` |
 | `6f3f6a67222af5ef8ea958206bec840dd831f73380500189b149b97e5a528c19` | 3645 | `llms.txt` |
 | `c0d46cf72820af16e4981cc8684e338be4f1eafb9db91ed7f07d66d1669466c6` | 11527 | `m365-secure-score-executive-report-template.html` |
 | `17c77435bd27c1778a3679053a8d95154fb78d45da9eacb196af02379c013682` | 993 | `manual-aggregate-counters.example.json` |
@@ -90,7 +90,7 @@ Guardrails: filesystem-only integrity aid; no account creation, upload, public p
 | `ba61e7a8578980b4ca00dbb073699fe40206921344ded5c4355f170068f965b5` | 8630 | `tools/apply_public_channel_fields.py` |
 | `3eccbcfebacc5368c4106fe939352058f790b3c1192a843b20d9a0779ac561c0` | 20631 | `tools/collect_public_signal_snapshot.py` |
 | `334b815cb35159f0acade5270ad0da82e50051ca1d4e35a0b55e145fda38723e` | 10492 | `tools/cyber_insurance_gap_register_generator.py` |
-| `400448caaa1652dd1f6960c4eb7b3dc2e4e43870894914bc9494abed2947159c` | 10318 | `tools/decide_next_revenue_validation_action.py` |
+| `8ba430297e08d97ab8731724152d8cf33823fc352a5f08c4b9a520891867d248` | 10464 | `tools/decide_next_revenue_validation_action.py` |
 | `6445103ded794a2ec847652eb605e03f04d8cf0c17f8fbfa79695a7e9ff94e8a` | 9908 | `tools/m365_secure_score_report_generator.py` |
 | `834887edaf44fb3da0d2a78be941b03105caf9527eebf36b340e20061d89aba9` | 11186 | `tools/msp_monthly_security_report_generator.py` |
 | `1802dd19e3da7cf876316617cd79378ca4d433aaa9d83af22b173a9a5acabb2b` | 9711 | `tools/nis2_readiness_summary_generator.py` |

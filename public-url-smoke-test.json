@@ -1,0 +1,221 @@
+{
+  "project": "Northsignal Labs MSP Security Reporting Template Pack",
+  "checked_at": "2026-07-31T15:01:23Z",
+  "state": "passed",
+  "approved_public_base_url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/",
+  "requests_checked": 23,
+  "paths_checked": [
+    "",
+    "README.md",
+    "download.html",
+    "generator-quickstart.html",
+    "DOWNLOAD.md",
+    "llms.txt",
+    "CHECKSUMS.txt",
+    "sample-outputs.html",
+    "SAMPLE-OUTPUTS.md",
+    "request-signal.html",
+    "REQUEST-ROADMAP.md",
+    "msp-monthly-security-report-template.html",
+    "nis2-readiness-checklist.html",
+    "m365-secure-score-executive-report-template.html",
+    "cyber-insurance-evidence-checklist.html",
+    "vciso-qbr-agenda-template.html",
+    "generated/msp-monthly-security-report.sample.html",
+    "generated/nis2-readiness-summary.sample.html",
+    "generated/m365-secure-score-report.sample.html",
+    "generated/cyber-insurance-gap-register.sample.html",
+    "generated/vciso-qbr-summary.sample.html",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "results": [
+    {
+      "path": "index",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/",
+      "status": 200,
+      "bytes": 11610,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "README.md",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/README.md",
+      "status": 200,
+      "bytes": 22308,
+      "errors": [],
+      "content_type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "download.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/download.html",
+      "status": 200,
+      "bytes": 9429,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "generator-quickstart.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/generator-quickstart.html",
+      "status": 200,
+      "bytes": 7823,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "DOWNLOAD.md",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/DOWNLOAD.md",
+      "status": 200,
+      "bytes": 4987,
+      "errors": [],
+      "content_type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "llms.txt",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/llms.txt",
+      "status": 200,
+      "bytes": 3645,
+      "errors": [],
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "CHECKSUMS.txt",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/CHECKSUMS.txt",
+      "status": 200,
+      "bytes": 12233,
+      "errors": [],
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "sample-outputs.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/sample-outputs.html",
+      "status": 200,
+      "bytes": 7785,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "SAMPLE-OUTPUTS.md",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/SAMPLE-OUTPUTS.md",
+      "status": 200,
+      "bytes": 3627,
+      "errors": [],
+      "content_type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "request-signal.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/request-signal.html",
+      "status": 200,
+      "bytes": 6957,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "REQUEST-ROADMAP.md",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/REQUEST-ROADMAP.md",
+      "status": 200,
+      "bytes": 5225,
+      "errors": [],
+      "content_type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "msp-monthly-security-report-template.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/msp-monthly-security-report-template.html",
+      "status": 200,
+      "bytes": 15465,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "nis2-readiness-checklist.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/nis2-readiness-checklist.html",
+      "status": 200,
+      "bytes": 12354,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "m365-secure-score-executive-report-template.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/m365-secure-score-executive-report-template.html",
+      "status": 200,
+      "bytes": 11891,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "cyber-insurance-evidence-checklist.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/cyber-insurance-evidence-checklist.html",
+      "status": 200,
+      "bytes": 13040,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "vciso-qbr-agenda-template.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/vciso-qbr-agenda-template.html",
+      "status": 200,
+      "bytes": 11985,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "generated/msp-monthly-security-report.sample.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/generated/msp-monthly-security-report.sample.html",
+      "status": 200,
+      "bytes": 5941,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "generated/nis2-readiness-summary.sample.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/generated/nis2-readiness-summary.sample.html",
+      "status": 200,
+      "bytes": 6017,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "generated/m365-secure-score-report.sample.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/generated/m365-secure-score-report.sample.html",
+      "status": 200,
+      "bytes": 4143,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "generated/cyber-insurance-gap-register.sample.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/generated/cyber-insurance-gap-register.sample.html",
+      "status": 200,
+      "bytes": 3143,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "generated/vciso-qbr-summary.sample.html",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/generated/vciso-qbr-summary.sample.html",
+      "status": 200,
+      "bytes": 6225,
+      "errors": [],
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "robots.txt",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/robots.txt",
+      "status": 200,
+      "bytes": 299,
+      "errors": [],
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://northsignal-labs.github.io/msp-security-reporting-template-pack/sitemap.xml",
+      "status": 200,
+      "bytes": 1884,
+      "errors": [],
+      "content_type": "application/xml"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "guardrail": "Approved public HTTPS GET checks only; no auth, upload, posting, analytics, forms/contact capture, issue-body/user data collection, payment/KYC, quote/invoice/sales workflow, or spend."
+}

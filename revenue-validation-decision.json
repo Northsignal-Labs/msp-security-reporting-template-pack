@@ -1,0 +1,31 @@
+{
+  "aggregate_signal": {
+    "commercial_fit_signals": 0,
+    "forks": 0,
+    "open_issues": 0,
+    "stars": 1,
+    "template_requests": 0,
+    "watchers": 1
+  },
+  "decision_state": "weak_or_no_signal_prioritize_distribution_metadata",
+  "fastest_money_path": "After approved launch, use the existing public-safe message bank for at most one relevant no-spam share and improve snippets/metadata; wait for aggregate stars/forks/issues/template requests before monetization work.",
+  "generated_at": "2026-07-31T15:01:25Z",
+  "guardrail": "no-spend local decision only; no account creation, publishing, posting, analytics, forms, contact capture, sensitive-data collection, payment/KYC, quote/invoice workflow, or spend",
+  "leading_asset": {
+    "key": "cyber_insurance_evidence",
+    "label": "Cyber-insurance evidence checklist/gap-register generator",
+    "score": 0
+  },
+  "manual_asset_scores": {
+    "cyber_insurance_evidence": 0,
+    "m365_secure_score_report": 0,
+    "msp_monthly_security_report": 0,
+    "nis2_readiness_checklist": 0,
+    "vciso_qbr_agenda": 0
+  },
+  "project": "Northsignal Labs MSP Security Reporting Template Pack",
+  "recommendation": "Weak/no signal: do not create payment infrastructure or more templates; improve discovery/distribution metadata first.",
+  "recommended_next_action": "Improve launch snippets/search/social metadata or channel-specific README wording before building new assets.",
+  "source_snapshot_state": "live_aggregate_snapshot_written",
+  "weighted_signal_score": 2
+}
