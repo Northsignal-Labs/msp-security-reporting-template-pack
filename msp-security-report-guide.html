@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Create MSP Client Security Reports That Actually Get Read — Northsignal Labs</title>
+  <meta name="description" content="A practical guide to building executive-level security reports for MSP clients. Includes report templates, M365 Secure Score summaries, NIS2 evidence mapping, and QBR scorecards." />
+  <meta property="og:title" content="How to Create MSP Client Security Reports That Actually Get Read" />
+  <meta property="og:description" content="Stop sending raw vulnerability lists. Here's how to build executive security reports your MSP clients will actually read, understand, and act on." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="keywords" content="MSP security report template, client security report, MSP reporting, executive security report, QBR template, NIS2 readiness, M365 Secure Score report, vCISO report" />
+  <style>
+    body{margin:0;background:#080b12;color:#edf3ff;font-family:Inter,system-ui,sans-serif;line-height:1.7}
+    header,main,footer{padding:28px clamp(18px,4vw,44px);max-width:800px;margin:0 auto}
+    header{border-bottom:1px solid rgba(255,255,255,.1);background:radial-gradient(circle at 0 0,rgba(124,199,255,.18),transparent 35%),#080b12}
+    h1{font-size:clamp(28px,4vw,44px);letter-spacing:-.03em;margin:24px 0 8px}
+    h2{font-size:clamp(22px,3vw,30px);margin:40px 0 12px;color:#bccae0}
+    h3{font-size:18px;margin:24px 0 8px;color:#bccae0}
+    p{margin:12px 0;color:#bccae0}
+    .muted{color:#7a8aa5}
+    .highlight{background:linear-gradient(135deg,rgba(124,199,255,.14),rgba(16,23,37,.96));border:1px solid rgba(124,199,255,.3);border-radius:14px;padding:18px;margin:20px 0}
+    .cta{display:inline-block;background:#39d98a;color:#080b12;font-weight:700;padding:12px 24px;border-radius:10px;text-decoration:none;font-size:16px;margin:8px 0}
+    .cta:hover{background:#64ed9a}
+    .pill{display:inline-block;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:3px 8px;color:#8d9bb3;font-size:11px}
+    footer{border-top:1px solid rgba(255,255,255,.08);margin-top:60px;font-size:14px;color:#5a6a85;text-align:center}
+    ul{color:#bccae0;padding-left:20px}
+    li{margin:8px 0}
+    table{border-collapse:collapse;width:100%;margin:16px 0}
+    th{text-align:left;color:#7cc7ff;border-bottom:1px solid rgba(255,255,255,.15);padding:10px 8px;font-weight:600}
+    td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,.06);color:#bccae0}
+  </style>
+</head>
+<body>
+<header>
+  <p><a href="/msp-security-reporting-template-pack/" style="color:#7cc7ff">← Northsignal Labs</a> / <a href="pricing.html" style="color:#7cc7ff">Pricing</a></p>
+  <h1>How to Create MSP Client Security Reports That Actually Get Read</h1>
+  <p class="muted" style="font-size:18px">A practical guide for MSPs who want to move from raw vulnerability lists to executive-level reporting that clients understand, act on, and pay for.</p>
+</header>
+
+<main>
+  <section class="highlight">
+    <p><strong>TL;DR:</strong> Stop sending clients raw vulnerability scans or M365 dashboards. Structure your security reporting around <strong>business impact, trends, and actionable next steps</strong>. <a href="pricing.html" style="color:#7cc7ff">We can help →</a></p>
+  </section>
+
+  <h2>Why Most MSP Security Reports Fail</h2>
+  <p>Most MSP security reports are either:</p>
+  <ul>
+    <li><strong>Too technical</strong> — A raw list of CVEs or Secure Score percentages that the client's CEO can't interpret</li>
+    <li><strong>Too infrequent</strong> — A quarterly email with no context, no trend, no call to action</li>
+    <li><strong>Too salesy</strong> — Pitching additional services rather than demonstrating value</li>
+  </ul>
+  <p>The result: clients don't read them, don't act on recommendations, and don't see the value of your security stack. The average MSP loses <strong>15-20% of security clients annually</strong> due to poor reporting engagement.</p>
+
+  <h2>The Executive Report Framework</h2>
+  <p>An effective MSP client security report has six components:</p>
+
+  <table>
+    <tr><th>Section</th><th>What it covers</th><th>Length</th></tr>
+    <tr><td>1. Executive Summary</td><td>What changed, what matters, what needs budget</td><td>½ page</td></tr>
+    <tr><td>2. Security Score Trend</td><td>M365 Secure Score, endpoint coverage, patching velocity</td><td>1 page</td></tr>
+    <tr><td>3. Vulnerability Landscape</td><td>Open vs resolved, critical/high/medium trends</td><td>1 page</td></tr>
+    <tr><td>4. Compliance Evidence</td><td>NIS2, GDPR, cyber-insurance controls mapping</td><td>1 page</td></tr>
+    <tr><td>5. Incidents & Events</td><td>Timeline of notable security events and responses</td><td>½ page</td></tr>
+    <tr><td>6. Action Register</td><td>Top 3-5 actions with owner and next review date</td><td>½ page</td></tr>
+  </table>
+
+  <h2>1. The Executive Summary</h2>
+  <p>This is the only section most executives will read. Make it count:</p>
+  <ul>
+    <li><strong>One sentence</strong> on the overall security posture trend (improving/stable/declining)</li>
+    <li><strong>One sentence</strong> on the most critical finding this period</li>
+    <li><strong>One sentence</strong> on what needs budget or management attention next quarter</li>
+  </ul>
+
+  <div class="highlight">
+    <p style="font-style:italic;margin:0">"Your M365 Secure Score improved 12 points to 78/100 this quarter. Three critical vulnerabilities were remediated within SLA, but two new high-severity findings need budget approval for the licensing required to patch them. We recommend approving the Defender for Identity upgrade (DKK 8,400/year) before the next audit cycle."</p>
+  </div>
+
+  <h2>2. Security Score Trend</h2>
+  <p>Use a simple month-over-month table or chart showing:</p>
+  <ul>
+    <li><strong>M365 Secure Score</strong> — Overall score + category breakdown (Identity, Device, Data, Apps, Infrastructure)</li>
+    <li><strong>Endpoint coverage</strong> — % of devices with active EDR, patched within 30 days</li>
+    <li><strong>Patching velocity</strong> — Mean time to patch critical and high vulnerabilities</li>
+  </ul>
+
+  <h2>3. Vulnerability Landscape</h2>
+  <p>Don't dump a raw scan. Summarize:</p>
+  <ul>
+    <li><strong>Trend:</strong> Open vs resolved this period vs last period</li>
+    <li><strong>Severity distribution:</strong> Critical, high, medium, low counts</li>
+    <li><strong>Top 3 findings:</strong> Most impactful vulnerabilities with business context</li>
+    <li><strong>Aging:</strong> Vulnerabilities past SLA with owner and risk note</li>
+  </ul>
+
+  <h2>4. Compliance Evidence Mapping (NIS2, GDPR, Cyber-Insurance)</h2>
+  <p>Map your existing controls to the relevant frameworks:</p>
+  <ul>
+    <li><strong>NIS2 Article 21</strong> — Risk analysis, incident handling, business continuity, supply chain security</li>
+    <li><strong>Cyber-insurance questionnaires</strong> — MFA coverage, backup frequency, incident response plan, access controls</li>
+    <li><strong>GDPR Article 32</strong> — Security of processing, pseudonymization, encryption, resilience</li>
+  </ul>
+  <p>Each control should show: <em>Status (Implemented / Partial / Missing) + Evidence reference + Next action</em></p>
+
+  <h2>5. Incidents & Events Timeline</h2>
+  <p>List all notable security events in the period:</p>
+  <ul>
+    <li>Date/time, event type, severity, detection method</li>
+    <li>Response actions taken and outcome</li>
+    <li>Current status (closed, monitoring, escalated)</li>
+  </ul>
+
+  <h2>6. Action Register</h2>
+  <p>End with 3-5 concrete actions ranked by business impact:</p>
+  <ul>
+    <li><strong>Action</strong> — What needs to be done</li>
+    <li><strong>Priority</strong> — Critical / High / Medium</li>
+    <li><strong>Owner</strong> — Client, MSP, or shared</li>
+    <li><strong>Target date</strong> — When it should be completed</li>
+    <li><strong>Business impact</strong> — What happens if not done</li>
+  </ul>
+
+  <h2>Making It Repeatable</h2>
+  <p>The biggest mistake MSPs make is building each report from scratch. You need a <strong>repeatable template pipeline</strong>:</p>
+  <ul>
+    <li>A JSON schema that defines the data structure for each report section</li>
+    <li>A local generator that transforms the JSON into formatted Markdown/HTML</li>
+    <li>Branding templates for client-specific logos and color schemes</li>
+    <li>A review-and-approve workflow before the report goes to the client</li>
+  </ul>
+
+  <div class="highlight">
+    <h3 style="margin-top:0;color:#edf3ff">Need a head start?</h3>
+    <p>Northsignal Labs offers a <strong>free MSP security reporting template pack</strong> with schemas, generators, and sample outputs for all six report sections.</p>
+    <p>Or use the <strong><a href="pricing.html" style="color:#7cc7ff">Report Automation Sprint (DKK 499)</a></strong> — send us your tool data and get a client-ready executive report in 48 hours.</p>
+    <a href="pricing.html" class="cta">See pricing →</a>
+  </div>
+
+  <h2>Common Mistakes to Avoid</h2>
+  <ul>
+    <li><strong>No trend data:</strong> One-off reports have no context. Always compare to the previous period.</li>
+    <li><strong>No business translation:</strong> "12 critical vulnerabilities" means nothing. "Your external RDP exposure creates a ransomware risk that could halt operations for 3-5 days" is actionable.</li>
+    <li><strong>No ownership:</strong> Every finding needs an owner, or nothing gets done.</li>
+    <li><strong>Too long:</strong> If the executive summary doesn't fit on one page, the full report won't be read.</li>
+    <li><strong>Inconsistent formatting:</strong> Different formats every month erodes trust and readability.</li>
+  </ul>
+
+  <p style="margin-top:40px"><em>Published by <a href="/msp-security-reporting-template-pack/" style="color:#7cc7ff">Northsignal Labs</a> — Independent automation lab building tools for MSP security reporting.</em></p>
+</main>
+
+<footer>
+  <p><a href="/msp-security-reporting-template-pack/" style="color:#7cc7ff">← Free template pack</a> · <a href="pricing.html" style="color:#7cc7ff">Paid report automation</a> · <a href="https://github.com/Northsignal-Labs/msp-security-reporting-template-pack" style="color:#7cc7ff">GitHub</a></p>
+</footer>
+</body>
+</html>
