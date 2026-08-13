@@ -1,28 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Northsignal Labs local static sitemap placeholder. Replace the host only after a no-spend public route is approved. -->
+<!-- Northsignal Labs static sitemap -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/pricing.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/msp-security-report-guide.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/reddit-post-draft.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/download.html</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/msp-monthly-security-report-template.html</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/nis2-readiness-checklist.html</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/m365-secure-score-executive-report-template.html</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/cyber-insurance-evidence-checklist.html</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/vciso-qbr-agenda-template.html</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/README.md</loc>
+    <lastmod>2026-07-25</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/sample-outputs.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://northsignal-labs.github.io/msp-security-reporting-template-pack/generator-quickstart.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <priority>0.4</priority>
   </url>
 </urlset>
